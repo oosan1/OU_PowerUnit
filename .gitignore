@@ -1,0 +1,17 @@
+# --- バックアップファイル (共有不要) ---
+PowerUnit-backups/
+Circuit/PowerUnit/PowerUnit-backups/
+*.bak
+
+# --- 個人のローカル設定・状態ファイル (共有不要) ---
+*.kicad_prl
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*~
+_autosave-*
+*.tmp
+
+# --- 復元可能なデータ・一時ファイル ---
+*-backups/
+# キャッシュ、ロックファイル
+*.lck
