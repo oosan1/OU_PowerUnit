@@ -573,19 +573,19 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -597,15 +597,63 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Fuse",
+          "name": "Fuse",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "説明",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MPN_URL",
+          "name": "MPN_URL",
           "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
-      "sort_asc": true,
-      "sort_field": "リファレンス"
+      "name": "",
+      "sort_asc": false,
+      "sort_field": "Footprint"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -648,7 +696,7 @@
         "uuid": "99d8d739-d1c6-4ba7-813a-bb7c79704874"
       }
     ],
-    "used_designators": "F1-11,RV1-4,R1-30,J1-35,D1-13,#PWR1-51,U1-15,C1-42,SW1-2,K1-3,Q1",
+    "used_designators": "SW1,RV1-4,R1-30,K1-3,J1-40,U1-15,Q1,F1,#PWR1-55,D1-10,C1-43",
     "variants": []
   },
   "sheets": [
