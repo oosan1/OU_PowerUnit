@@ -6,4 +6,5 @@
 	(lib (name "OU_Fuse") (type "KiCad") (uri "${KIPRJMOD}/libs/footprints/OU_Fuse.pretty") (options "") (descr ""))
 	(lib (name "OU_Diode") (type "KiCad") (uri "${KIPRJMOD}/libs/footprints/OU_Diode.pretty") (options "") (descr ""))
 	(lib (name "OU_Conn") (type "KiCad") (uri "${KIPRJMOD}/libs/footprints/OU_Conn.pretty") (options "") (descr ""))
+	(lib (name "OU_Power") (type "KiCad") (uri "${KIPRJMOD}/libs/footprints/OU_Power.pretty") (options "") (descr ""))
 )

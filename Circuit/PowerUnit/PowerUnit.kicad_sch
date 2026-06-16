@@ -15509,7 +15509,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OU_Power:M78AR033-1"
 			(at 528.32 213.995 0)
 			(hide yes)
 			(show_name no)
@@ -17675,7 +17675,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OU_Switch:1MD6-T1-B1-M1-Q-N-S"
 			(at 104.14 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -19160,7 +19160,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OU_Power:YDS512F"
 			(at 279.4 234.95 0)
 			(hide yes)
 			(show_name no)
@@ -23314,7 +23314,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OU_Power:M78AR05-1"
 			(at 458.47 213.995 0)
 			(hide yes)
 			(show_name no)
@@ -24915,7 +24915,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OU_Power:YDS512F"
 			(at 121.92 234.95 0)
 			(hide yes)
 			(show_name no)
@@ -27701,7 +27701,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OU_Power:YDS512F"
 			(at 200.66 234.95 0)
 			(hide yes)
 			(show_name no)
@@ -28567,7 +28567,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OU_Power:NJM7812FA"
 			(at 201.295 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -32636,7 +32636,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OU_Power:YDS512F"
 			(at 382.27 217.17 0)
 			(hide yes)
 			(show_name no)
