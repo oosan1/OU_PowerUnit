@@ -7,7 +7,7 @@
 		(at 0 -2.26 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "995733c4-c58d-460d-a6dd-bfdc38de940e")
+		(uuid "b73cccfd-4e59-4a50-ac09-ecb3db650fba")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "1c2fedfe-dadd-4cfe-8059-8891db377f34")
+		(uuid "9a7bc2f2-b401-4514-a204-5b3933a30f33")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "28323942-db16-496a-ba6f-e25bacc081f3")
+		(uuid "8418b564-c0d9-45c6-b865-30e3fc6af538")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c5b7eb9c-6a0c-40da-8d4e-54b6e6fa68b8")
+		(uuid "da77e342-31a0-4c03-99d3-f11f4ada1fb8")
 		(effects
 			(font
 				(size 1 1)
@@ -59,7 +59,7 @@
 		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "7724844d-e9da-4c41-9555-6bb7b616bcce")
+		(uuid "3a8db1a3-f89e-4a7e-9996-8960820bb8ba")
 		(effects
 			(font
 				(size 1 1)
@@ -76,9 +76,31 @@
 			(anchor rect)
 		)
 		(primitives)
-		(uuid "18429c16-39ab-42cd-9098-ea9460fa6494")
+		(uuid "537b49e4-5045-4b87-b9ba-6351a44bdf49")
 	)
 	(pad "2" smd custom
+		(at -0.5 0)
+		(size 0.25 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives)
+		(uuid "b85981d1-243e-4b3c-a72b-3501e12cdff2")
+	)
+	(pad "3" smd custom
+		(at 0.5 0)
+		(size 0.25 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives)
+		(uuid "2c00ff2d-48e0-4cba-838a-8c4d6682bed7")
+	)
+	(pad "4" smd custom
 		(at 1.25 0)
 		(size 1.5 1.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
@@ -87,7 +109,7 @@
 			(anchor rect)
 		)
 		(primitives)
-		(uuid "6bdba631-f728-4ab5-b305-de4f97aad6ce")
+		(uuid "5aaf5216-e9a6-408a-907c-1f68066d5902")
 	)
 	(embedded_fonts no)
 	(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step"

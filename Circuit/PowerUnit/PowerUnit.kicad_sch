@@ -16962,7 +16962,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 35.56 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -17392,7 +17392,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 35.56 257.81 0)
 			(hide yes)
 			(show_name no)
@@ -17982,7 +17982,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 35.56 240.03 0)
 			(hide yes)
 			(show_name no)
@@ -19025,7 +19025,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 35.56 275.59 0)
 			(hide yes)
 			(show_name no)
@@ -19249,7 +19249,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 35.56 248.92 0)
 			(hide yes)
 			(show_name no)
@@ -20858,7 +20858,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 367.03 19.05 0)
 			(hide yes)
 			(show_name no)
@@ -21841,7 +21841,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT60PW-M"
 			(at 24.13 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -22908,7 +22908,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 35.56 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -23113,7 +23113,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 35.56 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -24885,7 +24885,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 35.56 266.7 0)
 			(hide yes)
 			(show_name no)
@@ -27701,7 +27701,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 35.56 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -28162,7 +28162,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 196.85 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -28277,7 +28277,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 35.56 284.48 0)
 			(hide yes)
 			(show_name no)
@@ -32241,7 +32241,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 344.17 19.05 0)
 			(hide yes)
 			(show_name no)
@@ -33368,7 +33368,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 118.11 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -36399,7 +36399,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 275.59 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -36786,7 +36786,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "OU_Conn:AMASS_XT30PW-M"
 			(at 355.6 19.05 0)
 			(hide yes)
 			(show_name no)
