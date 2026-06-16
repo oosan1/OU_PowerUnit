@@ -1,0 +1,173 @@
+(footprint "メタルクラッド抵抗 25W100Ω"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 16.6 -12.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a5c12494-e0dd-4257-a5b3-9094cd74d07b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "メタルクラッド抵抗 25W100Ω"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e43a8aa4-1ec6-47aa-a869-03a3732023f4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "35ae7221-257f-4d33-bb34-52c0772cc911")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f8d5acca-bd58-43f7-a6cb-4eb079a2cd5c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -13.5 -13.5)
+		(end 13.5 13.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "4ca58d79-aaa1-44cc-b9ff-39b8ff7faa91")
+	)
+	(fp_circle
+		(center -9 9.5)
+		(end -5 9.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "e375e0ff-5463-43f9-8559-ba9946341ed4")
+	)
+	(fp_circle
+		(center 9 -9.5)
+		(end 13 -9.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "12cf93f4-fe14-454d-a4ee-41e284deae2d")
+	)
+	(fp_text user "スペーサーを使用→"
+		(at -11.96 -11.57 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "62f424b8-db2f-4838-b805-8c39af98bae0")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "←スペーサーを使用"
+		(at 12.25 11.64 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "d938fd01-aa0b-4b55-bb9f-de4cc96d71dc")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "20229624-4dc2-4048-9318-b4ca54c3caf5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -9 9.5)
+		(size 3.2 3.2)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "2b64bde1-2006-4d80-9e6f-e6cfa8ba6ddd")
+	)
+	(pad "" np_thru_hole circle
+		(at 9 -9.5)
+		(size 3.2 3.2)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "67c76f43-5730-4fcc-86b0-908de1d8f4fe")
+	)
+	(pad "1" thru_hole circle
+		(at -30 0)
+		(size 2.2 2.2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "34335415-c409-4a0b-98b5-356bdeabe2db")
+	)
+	(pad "2" thru_hole circle
+		(at 30 0)
+		(size 2.2 2.2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "46e1fe4e-91c2-48ec-bc93-8de56ebb0893")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/libs/3Dmodels/AH-25W.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
