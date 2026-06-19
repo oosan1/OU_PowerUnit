@@ -1,0 +1,182 @@
+(footprint "GR-10W"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 7.82 -11.37 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "433f8798-2677-4010-887f-8f6bb2ea2fd7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "GR-10W"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "da753036-dff8-4a2a-8d30-c1c585f19436")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5463da5a-e830-41ef-b1be-be82dd59b772")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1a286b69-0136-44a0-85a1-c37e58e8d99e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -9.5 -10.25)
+		(end 9.5 10.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "63421ae1-9e3f-43c3-9983-925b195a5ad3")
+	)
+	(fp_rect
+		(start -9.5 -5)
+		(end 9.5 5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "d09892a9-a990-476b-bfd0-809ea44ab136")
+	)
+	(fp_circle
+		(center -7.25 7)
+		(end -4.5 7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "bcb9a461-efd8-4b5d-8643-1646fc8b5559")
+	)
+	(fp_circle
+		(center 7.25 -7)
+		(end 10 -7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "056d2d51-1863-4301-be7b-d78304ab4f14")
+	)
+	(fp_text user "スペーサを使用"
+		(at -4.6 -8.11 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "7fa8d500-13e3-4ae7-8a75-bf9147704165")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "スペーサを使用"
+		(at -3.96 9.57 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "0ffb5ad9-1445-4609-a69a-a87554ec343b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "cccabf41-5399-4c03-9f5f-0fc400acc969")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -7.25 7)
+		(size 2.2 2.2)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "eadc042a-b302-49a5-9ae6-33eaf5be22d3")
+	)
+	(pad "" np_thru_hole circle
+		(at 7.25 -7)
+		(size 2.2 2.2)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "691f6d4b-d32e-4bdc-94c9-1418201f16af")
+	)
+	(pad "1" thru_hole circle
+		(at -12.7 0)
+		(size 2.2 2.2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "55899b18-c99f-4528-8cb5-98035966206b")
+	)
+	(pad "2" thru_hole circle
+		(at 12.7 0)
+		(size 2.2 2.2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d197be93-78ec-4e17-b0ca-7ec0420e8842")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/libs/3Dmodels/GR-10W.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
