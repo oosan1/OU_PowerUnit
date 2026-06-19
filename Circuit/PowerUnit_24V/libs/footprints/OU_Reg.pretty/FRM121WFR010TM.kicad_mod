@@ -7,7 +7,7 @@
 		(at 0 -2.26 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "b73cccfd-4e59-4a50-ac09-ecb3db650fba")
+		(uuid "671addf3-e126-4d05-a140-61e86fffa1c0")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "9a7bc2f2-b401-4514-a204-5b3933a30f33")
+		(uuid "8763b578-551f-4ff8-8632-ba11dbafc7dd")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8418b564-c0d9-45c6-b865-30e3fc6af538")
+		(uuid "ef573abe-0d43-46c9-b4af-a8cd6e2bbdf2")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "da77e342-31a0-4c03-99d3-f11f4ada1fb8")
+		(uuid "434f989b-96f9-436b-a594-4f03834c3a50")
 		(effects
 			(font
 				(size 1 1)
@@ -54,12 +54,13 @@
 		)
 	)
 	(attr through_hole)
+	(net_tie_pad_groups "1, 2" "3, 4")
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "3a8db1a3-f89e-4a7e-9996-8960820bb8ba")
+		(uuid "ad9cd933-81e4-4263-b5d8-d92c211944d5")
 		(effects
 			(font
 				(size 1 1)
@@ -76,7 +77,7 @@
 			(anchor rect)
 		)
 		(primitives)
-		(uuid "537b49e4-5045-4b87-b9ba-6351a44bdf49")
+		(uuid "4604784f-2765-49b7-8220-e9725648e75c")
 	)
 	(pad "2" smd custom
 		(at -0.5 0)
@@ -87,7 +88,7 @@
 			(anchor rect)
 		)
 		(primitives)
-		(uuid "b85981d1-243e-4b3c-a72b-3501e12cdff2")
+		(uuid "f0a0f4bb-db35-4f47-9ceb-6263ed0d194d")
 	)
 	(pad "3" smd custom
 		(at 0.5 0)
@@ -98,7 +99,7 @@
 			(anchor rect)
 		)
 		(primitives)
-		(uuid "2c00ff2d-48e0-4cba-838a-8c4d6682bed7")
+		(uuid "546ae68d-ec8d-4ad1-8262-6d710e9c1fb3")
 	)
 	(pad "4" smd custom
 		(at 1.25 0)
@@ -109,7 +110,7 @@
 			(anchor rect)
 		)
 		(primitives)
-		(uuid "5aaf5216-e9a6-408a-907c-1f68066d5902")
+		(uuid "cb817133-014e-4f06-963b-c30b6a2301d3")
 	)
 	(embedded_fonts no)
 	(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step"
