@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.0,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 2,
@@ -211,6 +211,7 @@
       ],
       "track_widths": [
         0.0,
+        0.25,
         2.0
       ],
       "tuning_pattern_settings": {
@@ -243,6 +244,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false
@@ -662,7 +667,7 @@
         "uuid": "d773e3dc-f3dc-4b9b-8427-3091bf12fc46"
       }
     ],
-    "used_designators": "J1,U1",
+    "used_designators": "RV1,R9-10,C1-6,C8-9,C12-13,J1,U1",
     "variants": []
   },
   "sheets": [
