@@ -60,11 +60,11 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
-          "min_island_area": 10.0,
+          "min_clearance": 0.0,
+          "min_island_area": 0.0013161349,
           "min_thickness": 0.25,
           "pad_connection": 2,
-          "remove_islands": 1,
+          "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
@@ -76,16 +76,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "silk_over_copper|121369200|65950180|a002b157-f0dc-472a-895f-789581857fa0|fcad584b-7c14-4c52-8e15-80af0410c87e",
-          ""
-        ],
-        [
-          "silk_over_copper|121920000|68643500|7bd755ce-192f-4fc9-a8ad-a1ac6a88f10e|fcad584b-7c14-4c52-8e15-80af0410c87e",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -220,8 +211,7 @@
       ],
       "track_widths": [
         0.0,
-        0.25,
-        0.8
+        0.25
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -253,6 +243,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
         },
         {
           "diameter": 0.9,
@@ -516,7 +510,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "PowerUnit_Motor.kicad_pro",
+    "filename": "PowerUnit_Servo.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -641,8 +635,20 @@
         },
         {
           "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
           "label": "Sim.Pins",
           "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
           "show": false
         },
         {
@@ -707,17 +713,17 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "PowerUnit_Motor.kicad_sch",
+        "filename": "PowerUnit_Servo.kicad_sch",
         "name": "ルート",
-        "uuid": "350da3ff-75a4-49e6-aa4b-c6ec185d4202"
+        "uuid": "a16b66f3-9723-4851-bfea-3e9c6a42aef5"
       }
     ],
-    "used_designators": "R1,J1-11,D1-2,C3-4,#PWR1-5",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
     [
-      "350da3ff-75a4-49e6-aa4b-c6ec185d4202",
+      "a16b66f3-9723-4851-bfea-3e9c6a42aef5",
       "ルート"
     ]
   ],

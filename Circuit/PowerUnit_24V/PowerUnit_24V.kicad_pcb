@@ -9502,7 +9502,7 @@
 		(descr "Hirose DF13 through hole, DF13-04P-1.25DSA, 4 Pins per row (https://www.hirose.com/product/en/products/DF13/DF13-2P-1.25DSA%2850%29/)")
 		(tags "connector Hirose DF13 vertical")
 		(property "Reference" "J10"
-			(at -5.386 -4.053 0)
+			(at -0.986 4.547 0)
 			(layer "F.SilkS")
 			(uuid "0d9c30a2-377a-43c9-b3c7-d39eeccb1ff8")
 			(effects
@@ -17115,6 +17115,19 @@
 				(bold yes)
 			)
 			(justify left)
+		)
+	)
+	(gr_text "ID:0"
+		(at 67.3 21.2 0)
+		(layer "F.SilkS" knockout)
+		(uuid "d4d4c2a8-c6e9-4060-867e-2a3bb425f1cc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify right)
 		)
 	)
 	(gr_text "Current"
