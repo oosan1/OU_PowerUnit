@@ -7298,7 +7298,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "OU_Conn:XT30U-M"
+		(property "Footprint" "OU_Conn:AMASS_XT30U-F"
 			(at 101.6 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -8029,7 +8029,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical"
+		(property "Footprint" "OU_Conn:AMASS_XT60-F"
 			(at 58.42 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -9611,7 +9611,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "OU_Conn:XT30U-M"
+		(property "Footprint" "OU_Conn:AMASS_XT30U-F"
 			(at 134.62 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -11538,7 +11538,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical"
+		(property "Footprint" "OU_Conn:AMASS_XT60-F"
 			(at 38.1 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -11806,7 +11806,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "OU_Conn:XT30U-M"
+		(property "Footprint" "OU_Conn:AMASS_XT30U-F"
 			(at 124.46 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -11888,7 +11888,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "OU_Conn:XT30U-M"
+		(property "Footprint" "OU_Conn:AMASS_XT30U-F"
 			(at 113.03 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -13478,7 +13478,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical"
+		(property "Footprint" "OU_Conn:AMASS_XT60-F"
 			(at 68.58 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -13560,7 +13560,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical"
+		(property "Footprint" "OU_Conn:AMASS_XT60-F"
 			(at 48.26 144.78 0)
 			(hide yes)
 			(show_name no)
