@@ -9,4 +9,5 @@
 	(lib (name "OU_Power") (type "KiCad") (uri "/home/oosan1/Documents/git_repos/OU_PowerUnit/Circuit/PowerUnit_Servo/libs/footprints/OU_Power.pretty") (options "") (descr ""))
 	(lib (name "OU_Picture") (type "KiCad") (uri "/home/oosan1/Documents/git_repos/OU_PowerUnit/Circuit/PowerUnit_Servo/libs/footprints/OU_Picture.pretty") (options "") (descr ""))
 	(lib (name "OU_Conn") (type "KiCad") (uri "/home/oosan1/Documents/git_repos/OU_PowerUnit/Circuit/PowerUnit_Servo/libs/footprints/OU_Conn.pretty") (options "") (descr ""))
+	(lib (name "OU_Fuse") (type "KiCad") (uri "${KIPRJMOD}/libs/footprints/OU_Fuse.pretty") (options "") (descr ""))
 )

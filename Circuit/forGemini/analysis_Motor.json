@@ -362,7 +362,7 @@
       "type": "led"
     },
     {
-      "value": "SMLJ24A-Q",
+      "value": "SMCJ26A",
       "footprint": "OU_Diode:SMCJSeries_LTF",
       "mpn": "",
       "manufacturer": "",
@@ -656,7 +656,7 @@
     },
     {
       "reference": "D2",
-      "value": "SMLJ24A-Q",
+      "value": "SMCJ26A",
       "lib_id": "Device:D_Zener",
       "lib_name": "",
       "footprint": "OU_Diode:SMCJSeries_LTF",
@@ -1370,7 +1370,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -1483,7 +1483,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -1602,7 +1602,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -1714,7 +1714,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -1846,7 +1846,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -1959,7 +1959,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -2078,7 +2078,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -2190,7 +2190,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -2322,7 +2322,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -2435,7 +2435,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -2554,7 +2554,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -2666,7 +2666,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -2805,7 +2805,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -2918,7 +2918,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -3037,7 +3037,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -3149,7 +3149,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -3281,7 +3281,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -3394,7 +3394,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -3513,7 +3513,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -3625,7 +3625,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -3757,7 +3757,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -3870,7 +3870,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -3989,7 +3989,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -4101,7 +4101,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -4233,7 +4233,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -4346,7 +4346,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -4465,7 +4465,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -4577,7 +4577,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -4709,7 +4709,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -4822,7 +4822,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -4941,7 +4941,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -5053,7 +5053,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -5185,7 +5185,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -5298,7 +5298,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -5417,7 +5417,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -5529,7 +5529,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -5661,7 +5661,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -5774,7 +5774,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -5893,7 +5893,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -6005,7 +6005,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -6137,7 +6137,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"
@@ -6250,7 +6250,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -6369,7 +6369,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "1",
               "pin_name": "K"
@@ -6481,7 +6481,7 @@
             },
             {
               "ref": "D2",
-              "value": "SMLJ24A-Q",
+              "value": "SMCJ26A",
               "type": "diode",
               "pin": "2",
               "pin_name": "A"

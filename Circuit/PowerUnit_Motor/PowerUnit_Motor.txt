@@ -1,0 +1,1577 @@
+(export
+	(version "E")
+	(design
+		(source "/home/oosan1/Documents/git_repos/OU_PowerUnit/Circuit/PowerUnit_Motor/PowerUnit_Motor.kicad_sch")
+		(date "2026-06-22T16:13:01")
+		(tool "Eeschema 10.0.3-10.0.3~ubuntu26.04.1")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "PowerUnit_Motor.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C3")
+			(value "1000u")
+			(footprint "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm")
+			(description "Polarized capacitor")
+			(fields
+				(field
+					(name "MPN") "ルビコンZLH")
+				(field
+					(name "MPN_URL") "https://akizukidenshi.com/catalog/g/g108442/")
+				(field
+					(name "Fuse")
+				)
+				(field
+					(name "Footprint") "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Polarized capacitor")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "ルビコンZLH")
+			)
+			(property
+				(name "MPN_URL")
+				(value "https://akizukidenshi.com/catalog/g/g108442/")
+			)
+			(property
+				(name "Fuse")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "db643080-d6aa-4065-a1d3-3f724603a02a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C4")
+			(value "1000u")
+			(footprint "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm")
+			(description "Polarized capacitor")
+			(fields
+				(field
+					(name "MPN") "ルビコンZLH")
+				(field
+					(name "MPN_URL") "https://akizukidenshi.com/catalog/g/g108442/")
+				(field
+					(name "Fuse")
+				)
+				(field
+					(name "Footprint") "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Polarized capacitor")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "ルビコンZLH")
+			)
+			(property
+				(name "MPN_URL")
+				(value "https://akizukidenshi.com/catalog/g/g108442/")
+			)
+			(property
+				(name "Fuse")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1fcefa06-4858-4d9a-91f4-de9c9318e0ba")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D1")
+			(value "LED")
+			(footprint "LED_THT:LED_D5.0mm")
+			(description "Light emitting diode")
+			(fields
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+				(field
+					(name "Fuse")
+				)
+				(field
+					(name "Footprint") "LED_THT:LED_D5.0mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Light emitting diode")
+			)
+			(libsource
+				(lib "Device")
+				(part "LED")
+				(description "Light emitting diode")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=K 2=A")
+			)
+			(property
+				(name "Fuse")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "LED diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "LED* LED_SMD:* LED_THT:*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "602a9f64-ec70-4666-8e95-0887d3a34ede")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D2")
+			(value "SMCJ26A")
+			(footprint "OU_Diode:SMCJSeries_LTF")
+			(description "Zener diode")
+			(fields
+				(field
+					(name "Fuse")
+				)
+				(field
+					(name "MPN_URL") "https://www.digikey.jp/ja/products/detail/littelfuse-inc/SMCJ26A/762396")
+				(field
+					(name "Footprint") "OU_Diode:SMCJSeries_LTF")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Zener diode")
+			)
+			(libsource
+				(lib "Device")
+				(part "D_Zener")
+				(description "Zener diode")
+			)
+			(property
+				(name "Fuse")
+				(value "")
+			)
+			(property
+				(name "MPN_URL")
+				(value "https://www.digikey.jp/ja/products/detail/littelfuse-inc/SMCJ26A/762396")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TO-???* *_Diode_* *SingleDiode* D_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5f42d8c4-9ab2-40a3-a42d-0d049bb68b67")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J1")
+			(value "Conn_01x02_Pin")
+			(footprint "OU_Conn:AMASS_XT60PW-M")
+			(description "Generic connector, single row, 01x02, script generated")
+			(fields
+				(field
+					(name "Footprint") "OU_Conn:AMASS_XT60PW-M")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x02_Pin")
+				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ccfa747e-7e5d-488a-b404-00821ea4ccbc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "Conn_01x02_Pin")
+			(footprint "OU_Conn:AMASS_XT60PW-F")
+			(description "Generic connector, single row, 01x02, script generated")
+			(fields
+				(field
+					(name "Fuse")
+				)
+				(field
+					(name "MPN") "XT30PW-M")
+				(field
+					(name "MPN_URL") "https://akizukidenshi.com/catalog/g/g117949/")
+				(field
+					(name "Footprint") "OU_Conn:AMASS_XT60PW-F")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x02_Pin")
+				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "Fuse")
+				(value "")
+			)
+			(property
+				(name "MPN")
+				(value "XT30PW-M")
+			)
+			(property
+				(name "MPN_URL")
+				(value "https://akizukidenshi.com/catalog/g/g117949/")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e66c856e-22b1-4851-9980-4580d7808856")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J3")
+			(value "Conn_01x02_Pin")
+			(footprint "OU_Conn:AMASS_XT60PW-F")
+			(description "Generic connector, single row, 01x02, script generated")
+			(fields
+				(field
+					(name "Fuse")
+				)
+				(field
+					(name "MPN") "XT30PW-M")
+				(field
+					(name "MPN_URL") "https://akizukidenshi.com/catalog/g/g117949/")
+				(field
+					(name "Footprint") "OU_Conn:AMASS_XT60PW-F")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x02_Pin")
+				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "Fuse")
+				(value "")
+			)
+			(property
+				(name "MPN")
+				(value "XT30PW-M")
+			)
+			(property
+				(name "MPN_URL")
+				(value "https://akizukidenshi.com/catalog/g/g117949/")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "74d91e18-9096-45c7-824f-b67781fdb089")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J4")
+			(value "Conn_01x02_Pin")
+			(footprint "OU_Conn:AMASS_XT60PW-F")
+			(description "Generic connector, single row, 01x02, script generated")
+			(fields
+				(field
+					(name "Fuse")
+				)
+				(field
+					(name "MPN") "XT30PW-M")
+				(field
+					(name "MPN_URL") "https://akizukidenshi.com/catalog/g/g117949/")
+				(field
+					(name "Footprint") "OU_Conn:AMASS_XT60PW-F")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x02_Pin")
+				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "Fuse")
+				(value "")
+			)
+			(property
+				(name "MPN")
+				(value "XT30PW-M")
+			)
+			(property
+				(name "MPN_URL")
+				(value "https://akizukidenshi.com/catalog/g/g117949/")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "18c5b71d-0aa3-4bbe-98a8-65486a7a11a3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J5")
+			(value "Conn_01x02_Pin")
+			(footprint "OU_Conn:AMASS_XT60PW-F")
+			(description "Generic connector, single row, 01x02, script generated")
+			(fields
+				(field
+					(name "Fuse")
+				)
+				(field
+					(name "MPN") "XT30PW-M")
+				(field
+					(name "MPN_URL") "https://akizukidenshi.com/catalog/g/g117949/")
+				(field
+					(name "Footprint") "OU_Conn:AMASS_XT60PW-F")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x02_Pin")
+				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "Fuse")
+				(value "")
+			)
+			(property
+				(name "MPN")
+				(value "XT30PW-M")
+			)
+			(property
+				(name "MPN_URL")
+				(value "https://akizukidenshi.com/catalog/g/g117949/")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "20c4a511-4087-43b3-b6ef-37b3e57650d7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J6")
+			(value "Conn_01x02_Pin")
+			(footprint "OU_Conn:AMASS_XT60PW-F")
+			(description "Generic connector, single row, 01x02, script generated")
+			(fields
+				(field
+					(name "Fuse")
+				)
+				(field
+					(name "MPN") "XT30PW-M")
+				(field
+					(name "MPN_URL") "https://akizukidenshi.com/catalog/g/g117949/")
+				(field
+					(name "Footprint") "OU_Conn:AMASS_XT60PW-F")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x02_Pin")
+				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "Fuse")
+				(value "")
+			)
+			(property
+				(name "MPN")
+				(value "XT30PW-M")
+			)
+			(property
+				(name "MPN_URL")
+				(value "https://akizukidenshi.com/catalog/g/g117949/")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "456bcea2-4d14-4f54-886b-e13dcd3fed66")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J7")
+			(value "Conn_01x02_Pin")
+			(footprint "OU_Conn:AMASS_XT60PW-F")
+			(description "Generic connector, single row, 01x02, script generated")
+			(fields
+				(field
+					(name "Fuse")
+				)
+				(field
+					(name "MPN") "XT30PW-M")
+				(field
+					(name "MPN_URL") "https://akizukidenshi.com/catalog/g/g117949/")
+				(field
+					(name "Footprint") "OU_Conn:AMASS_XT60PW-F")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x02_Pin")
+				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "Fuse")
+				(value "")
+			)
+			(property
+				(name "MPN")
+				(value "XT30PW-M")
+			)
+			(property
+				(name "MPN_URL")
+				(value "https://akizukidenshi.com/catalog/g/g117949/")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "6220aceb-64c3-46f7-adf7-dd6eb9adb3ba")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J8")
+			(value "Conn_01x02_Pin")
+			(footprint "OU_Conn:AMASS_XT60PW-F")
+			(description "Generic connector, single row, 01x02, script generated")
+			(fields
+				(field
+					(name "Fuse")
+				)
+				(field
+					(name "MPN") "XT30PW-M")
+				(field
+					(name "MPN_URL") "https://akizukidenshi.com/catalog/g/g117949/")
+				(field
+					(name "Footprint") "OU_Conn:AMASS_XT60PW-F")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x02_Pin")
+				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "Fuse")
+				(value "")
+			)
+			(property
+				(name "MPN")
+				(value "XT30PW-M")
+			)
+			(property
+				(name "MPN_URL")
+				(value "https://akizukidenshi.com/catalog/g/g117949/")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "fb2da4d4-450f-4935-b899-29a682786829")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J9")
+			(value "Conn_01x02_Pin")
+			(footprint "OU_Conn:AMASS_XT60PW-F")
+			(description "Generic connector, single row, 01x02, script generated")
+			(fields
+				(field
+					(name "Fuse")
+				)
+				(field
+					(name "MPN") "XT30PW-M")
+				(field
+					(name "MPN_URL") "https://akizukidenshi.com/catalog/g/g117949/")
+				(field
+					(name "Footprint") "OU_Conn:AMASS_XT60PW-F")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x02_Pin")
+				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "Fuse")
+				(value "")
+			)
+			(property
+				(name "MPN")
+				(value "XT30PW-M")
+			)
+			(property
+				(name "MPN_URL")
+				(value "https://akizukidenshi.com/catalog/g/g117949/")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "85286799-0133-4b97-9613-788229d79f7e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J10")
+			(value "Conn_01x02_Pin")
+			(footprint "OU_Conn:AMASS_XT60-F")
+			(description "Generic connector, single row, 01x02, script generated")
+			(fields
+				(field
+					(name "Fuse")
+				)
+				(field
+					(name "MPN") "XT30PW-M")
+				(field
+					(name "MPN_URL") "https://akizukidenshi.com/catalog/g/g117949/")
+				(field
+					(name "Footprint") "OU_Conn:AMASS_XT60-F")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x02_Pin")
+				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "Fuse")
+				(value "")
+			)
+			(property
+				(name "MPN")
+				(value "XT30PW-M")
+			)
+			(property
+				(name "MPN_URL")
+				(value "https://akizukidenshi.com/catalog/g/g117949/")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f2849a04-9479-4dc4-ab43-f860619711f8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J11")
+			(value "Conn_01x02_Pin")
+			(footprint "OU_Conn:AMASS_XT60-F")
+			(description "Generic connector, single row, 01x02, script generated")
+			(fields
+				(field
+					(name "Fuse")
+				)
+				(field
+					(name "MPN") "XT30PW-M")
+				(field
+					(name "MPN_URL") "https://akizukidenshi.com/catalog/g/g117949/")
+				(field
+					(name "Footprint") "OU_Conn:AMASS_XT60-F")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x02_Pin")
+				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "Fuse")
+				(value "")
+			)
+			(property
+				(name "MPN")
+				(value "XT30PW-M")
+			)
+			(property
+				(name "MPN_URL")
+				(value "https://akizukidenshi.com/catalog/g/g117949/")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "633ba164-472e-4073-9860-db0f5fdc8bdf")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R1")
+			(value "7.5k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Fuse")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Fuse")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "ルート")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PowerUnit_Motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1f8a8f81-10e3-4ed1-b0ed-eef0a256bb56")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Connector")
+			(part "Conn_01x02_Pin")
+			(description "Generic connector, single row, 01x02, script generated")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x02_Pin")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "C_Polarized")
+			(description "Polarized capacitor")
+			(footprints
+				(fp "CP_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C_Polarized")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Polarized capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "D_Zener")
+			(description "Zener diode")
+			(footprints
+				(fp "TO-???*")
+				(fp "*_Diode_*")
+				(fp "*SingleDiode*")
+				(fp "D_*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "D_Zener")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Zener diode")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "LED")
+			(description "Light emitting diode")
+			(footprints
+				(fp "LED*")
+				(fp "LED_SMD:*")
+				(fp "LED_THT:*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "LED")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Light emitting diode")
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "R")
+			(description "Resistor")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "R")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Connector")
+			(uri "${KICAD10_SYMBOL_DIR}/Connector.kicad_sym")
+		)
+		(library
+			(logical "Device")
+			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "+24V_DRV")
+			(class "Default")
+			(node
+				(ref "C3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D2")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J10")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J11")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J6")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J7")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J8")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J9")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "2")
+			(name "GNDPWR")
+			(class "Default")
+			(node
+				(ref "C3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "D1")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D2")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J10")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J11")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J6")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J7")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J8")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J9")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "3")
+			(name "Net-(D1-A)")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+	)
+)

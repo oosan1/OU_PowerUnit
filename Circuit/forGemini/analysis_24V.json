@@ -10974,7 +10974,7 @@
       "name": "I2C_SCL",
       "type": "label",
       "x": 157.48,
-      "y": 161.29,
+      "y": 160.02,
       "angle": 90.0,
       "_sheet": 0
     },
@@ -11255,16 +11255,8 @@
   "label_shape_warnings": [],
   "pwr_flag_warnings": [
     {
-      "net": "+24V_DRV",
-      "message": "Power rail '+24V_DRV' has power_in pins but no power_out or PWR_FLAG \u2014 ERC will flag this",
-      "pin_types": [
-        "passive",
-        "power_in"
-      ]
-    },
-    {
-      "net": "+3.3V",
-      "message": "Power rail '+3.3V' has power_in pins but no power_out or PWR_FLAG \u2014 ERC will flag this",
+      "net": "GNDPWR",
+      "message": "Power rail 'GNDPWR' has power_in pins but no power_out or PWR_FLAG \u2014 ERC will flag this",
       "pin_types": [
         "passive",
         "power_in"
@@ -11288,8 +11280,16 @@
       ]
     },
     {
-      "net": "GNDPWR",
-      "message": "Power rail 'GNDPWR' has power_in pins but no power_out or PWR_FLAG \u2014 ERC will flag this",
+      "net": "+24V_DRV",
+      "message": "Power rail '+24V_DRV' has power_in pins but no power_out or PWR_FLAG \u2014 ERC will flag this",
+      "pin_types": [
+        "passive",
+        "power_in"
+      ]
+    },
+    {
+      "net": "+3.3V",
+      "message": "Power rail '+3.3V' has power_in pins but no power_out or PWR_FLAG \u2014 ERC will flag this",
       "pin_types": [
         "passive",
         "power_in"
@@ -11669,7 +11669,7 @@
   },
   "wire_geometry": {
     "total_wires": 197,
-    "total_length_mm": 1276.3,
+    "total_length_mm": 1275.1,
     "avg_length_mm": 6.5
   },
   "simulation_readiness": {
