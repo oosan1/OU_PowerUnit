@@ -1,0 +1,157 @@
+(footprint "電圧メータ_秋月_超小型"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -9.65 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4e7760b6-b828-400d-924e-9bba044fc00e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "電圧メータ_秋月_超小型"
+		(at 0 6.7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "93b62ebb-7e37-4df4-a724-ffcd98c356ad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d324b581-5d2f-45fe-b305-e32794962c82")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "747a7d2e-f0b2-40fe-a865-0b63246715b8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -11.5 -5.5)
+		(end 11.5 5.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "f15b96f5-906c-4faf-8262-aae4539b9b18")
+	)
+	(fp_circle
+		(center -13 0)
+		(end -10.69 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "eb981669-26ba-4307-a2b0-a87394075610")
+	)
+	(fp_circle
+		(center 13 0)
+		(end 15.31 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "4191e3ab-d077-4c5c-a0c2-af7ad43e8cec")
+	)
+	(fp_text user "秋月 超小型デジタル電圧計"
+		(at -10.97 -3.61 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "494f77bd-46b4-48cb-a047-7f610d84a06f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "14.9"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "0c5f1be0-962a-4d9e-b6ce-433ba6918511")
+		(effects
+			(font
+				(size 5 5)
+				(thickness 0.5)
+			)
+		)
+	)
+	(fp_text user "リード線↓"
+		(at 4.73 4.97 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "691022c9-7541-49b8-a9a8-0445d4cc3807")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 8.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0cbb28dd-f943-40a3-9f51-55c02e1a6d3f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -13 0)
+		(size 2.2 2.2)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "b75b81d6-31c4-40c3-8e36-bb76aff52078")
+	)
+	(pad "" np_thru_hole circle
+		(at 13 0)
+		(size 2.2 2.2)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "3adfcaad-90ae-469c-8dfb-be8b03891b2e")
+	)
+	(embedded_fonts no)
+)

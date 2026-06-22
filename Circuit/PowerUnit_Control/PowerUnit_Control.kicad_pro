@@ -60,11 +60,11 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.0,
           "min_island_area": 0.0013161349,
           "min_thickness": 0.25,
           "pad_connection": 2,
-          "remove_islands": 0,
+          "remove_islands": 1,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
@@ -78,7 +78,7 @@
       ],
       "drc_exclusions": [
         [
-          "courtyards_overlap|94185000|35955000|29d4da10-72d0-4422-999f-9b90c7ef9700|cb7a2692-4fb0-4e53-9504-47846ee7babd",
+          "silk_over_copper|109670000|35000000|92b7d883-d708-4ead-8dac-3bfda9647172|56a673fc-2fb6-4340-87b1-56010652be7e",
           ""
         ]
       ],
@@ -217,7 +217,7 @@
       "track_widths": [
         0.0,
         0.25,
-        5.0
+        1.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -516,7 +516,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "PowerUnit_Servo.kicad_pro",
+    "filename": "PowerUnit_Control.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -719,18 +719,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "PowerUnit_Servo.kicad_sch",
-        "name": "ルート",
-        "uuid": "a16b66f3-9723-4851-bfea-3e9c6a42aef5"
+        "filename": "PowerUnit_Control.kicad_sch",
+        "name": "PowerUnit_Control",
+        "uuid": "94f453ed-3c09-4964-9db6-2f3edd4da60d"
       }
     ],
-    "used_designators": "",
+    "used_designators": "C9",
     "variants": []
   },
   "sheets": [
     [
-      "a16b66f3-9723-4851-bfea-3e9c6a42aef5",
-      "ルート"
+      "94f453ed-3c09-4964-9db6-2f3edd4da60d",
+      "PowerUnit_Control"
     ]
   ],
   "text_variables": {},
