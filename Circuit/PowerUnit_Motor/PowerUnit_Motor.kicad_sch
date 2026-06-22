@@ -2892,7 +2892,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SMLJ24A-Q"
+		(property "Value" "SMCJ26A"
 			(at 72.39 77.724 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2947,7 +2947,7 @@
 				)
 			)
 		)
-		(property "MPN_URL" "https://eleshop.jp/shop/g/g2839634/?srsltid=AfmBOoo6bjoT8d1pyxPuT_AKB5mkWAnJWXy0-CXLNyQEAItHS72fDDjh"
+		(property "MPN_URL" "https://www.digikey.jp/ja/products/detail/littelfuse-inc/SMCJ26A/762396"
 			(at 73.66 63.5 0)
 			(hide yes)
 			(show_name no)

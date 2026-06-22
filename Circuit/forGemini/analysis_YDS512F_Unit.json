@@ -1,0 +1,3050 @@
+{
+  "analyzer_type": "schematic",
+  "schema_version": "1.3.0",
+  "summary": {
+    "total_findings": 17,
+    "by_severity": {
+      "error": 2,
+      "warning": 4,
+      "info": 11
+    }
+  },
+  "trust_summary": {
+    "total_findings": 17,
+    "trust_level": "high",
+    "by_confidence": {
+      "deterministic": 14,
+      "heuristic": 3,
+      "datasheet-backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 15,
+      "heuristic_rule": 0,
+      "symbol_footprint": 0,
+      "bom": 2,
+      "geometry": 0,
+      "api_lookup": 0
+    },
+    "provenance_coverage_pct": 35.3,
+    "bom_coverage": {
+      "total_components": 7,
+      "with_mpn": 4,
+      "with_datasheet": 0,
+      "mpn_pct": 57.1,
+      "datasheet_pct": 0.0
+    }
+  },
+  "file": "/home/oosan1/Documents/git_repos/OU_PowerUnit/Circuit/YDS512F_Unit/YDS512F_Unit.kicad_sch",
+  "kicad_version": "10.0",
+  "file_version": "20260306",
+  "title_block": {},
+  "statistics": {
+    "total_components": 7,
+    "unique_parts": 7,
+    "dnp_parts": 0,
+    "total_nets": 12,
+    "total_wires": 35,
+    "total_no_connects": 0,
+    "component_types": {
+      "capacitor": 5,
+      "connector": 1,
+      "ic": 1
+    },
+    "power_rails": [],
+    "missing_mpn": [
+      "C3",
+      "J1",
+      "U1"
+    ],
+    "missing_footprint": []
+  },
+  "findings": [
+    {
+      "ref": "J1",
+      "value": "Conn_01x07_Pin",
+      "total_pins": 7,
+      "ground_pins": 0,
+      "signal_pins": 7,
+      "status": "warning",
+      "detail": "J1: 7-pin connector has no ground pins",
+      "detector": "audit_connector_ground_distribution",
+      "rule_id": "CG-AUD",
+      "category": "connectors",
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "summary": "Connector J1 has no ground pins (7 pins)",
+      "description": "Connector J1 has 7 signal pins but no ground pins.",
+      "components": [
+        "J1"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Add ground pin(s) for EMI control.",
+      "report_context": {
+        "section": "Connector Ground",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "provenance": {
+        "evidence": "cg_ground_audit",
+        "confidence": "deterministic",
+        "claimed_components": [
+          "J1"
+        ],
+        "excluded_by": [],
+        "suppressed_candidates": []
+      },
+      "detection_id": "connector_ground_audit:4e03f8f166ee",
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "category": "regulator_caps",
+      "component": "U1",
+      "value": "YDS512F",
+      "topology": "LDO",
+      "missing_caps": {
+        "input": "__unnamed_2",
+        "output": "__unnamed_0"
+      },
+      "detector": "detect_design_observations",
+      "rule_id": "DO-DET",
+      "severity": "info",
+      "confidence": "heuristic",
+      "evidence_source": "topology",
+      "summary": "Regulator U1 missing capacitors",
+      "description": "Regulator missing input or output capacitors",
+      "components": [
+        "U1"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "",
+      "report_context": {
+        "section": "Design Observations",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "provenance": {
+        "evidence": "obs_topology",
+        "confidence": "heuristic",
+        "claimed_components": [
+          "U1"
+        ],
+        "excluded_by": [],
+        "suppressed_candidates": []
+      },
+      "detection_id": "",
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "detector": "audit_datasheet_coverage",
+      "rule_id": "DS-002",
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "bom",
+      "category": "verification",
+      "summary": "No datasheets directory found (4/7 parts have MPNs). Sync datasheets before making pin-level claims.",
+      "components": [
+        "C1",
+        "C2",
+        "C4",
+        "C5"
+      ],
+      "nets": [],
+      "pins": [],
+      "datasheets_dir": null,
+      "datasheet_file_count": 0,
+      "bom_size": 7,
+      "mpn_coverage_percent": 57.1,
+      "recommendation": "Run datasheet sync via the digikey / mouser / lcsc / element14 skill (which one depends on the user's distributor access and API credentials). A ./datasheets/ directory with PDFs and a manifest.json enables pin-level verification in the next analyzer run.",
+      "report_context": {
+        "section": "Datasheet Coverage",
+        "impact": "Review claims must stay at consistency level until datasheets land.",
+        "standard_ref": ""
+      },
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "connector_ref": "J1",
+      "connector_value": "Conn_01x07_Pin",
+      "interface_type": "header",
+      "risk_level": "medium_risk",
+      "signal_nets": [
+        "__unnamed_10",
+        "__unnamed_4",
+        "__unnamed_5",
+        "__unnamed_6",
+        "__unnamed_7",
+        "__unnamed_8",
+        "__unnamed_9"
+      ],
+      "protected_nets": [],
+      "unprotected_nets": [
+        "__unnamed_10",
+        "__unnamed_4",
+        "__unnamed_5",
+        "__unnamed_6",
+        "__unnamed_7",
+        "__unnamed_8",
+        "__unnamed_9"
+      ],
+      "coverage": "none",
+      "esd_devices": [],
+      "esd_device_details": [],
+      "detector": "audit_esd_protection",
+      "rule_id": "EP-AUD",
+      "category": "protection",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "summary": "ESD audit J1 (header): none coverage",
+      "description": "ESD protection audit for header connector J1: none coverage.",
+      "components": [
+        "J1"
+      ],
+      "nets": [
+        "__unnamed_10",
+        "__unnamed_4",
+        "__unnamed_5",
+        "__unnamed_6",
+        "__unnamed_7",
+        "__unnamed_8",
+        "__unnamed_9"
+      ],
+      "pins": [],
+      "recommendation": "",
+      "report_context": {
+        "section": "ESD Protection",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "provenance": {
+        "evidence": "esd_coverage_audit",
+        "confidence": "deterministic",
+        "claimed_components": [
+          "J1"
+        ],
+        "excluded_by": [],
+        "suppressed_candidates": []
+      },
+      "detection_id": "",
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "detector": "analyze_connectivity",
+      "rule_id": "NT-001",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "category": "connectivity",
+      "summary": "Single-pin net: __unnamed_3 only connects to C3.2 (passive)",
+      "description": "Net '__unnamed_3' has exactly one pin: C3.2, pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+      "components": [
+        "C3"
+      ],
+      "nets": [
+        "__unnamed_3"
+      ],
+      "pins": [
+        "C3.2"
+      ],
+      "net_display_name": "__unnamed_3",
+      "pin_type": "passive",
+      "pin_name": "",
+      "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+      "report_context": {
+        "section": "Connectivity",
+        "impact": "Passive or unclassified pin lonely on its own net.",
+        "standard_ref": ""
+      },
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "detector": "analyze_connectivity",
+      "rule_id": "NT-001",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "category": "connectivity",
+      "summary": "Single-pin net: J1.Pin_7 only connects to J1.7 (Pin_7) (passive)",
+      "description": "Net '__unnamed_10' has exactly one pin: J1.7 (Pin_7), pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+      "components": [
+        "J1"
+      ],
+      "nets": [
+        "__unnamed_10"
+      ],
+      "pins": [
+        "J1.7"
+      ],
+      "net_display_name": "J1.Pin_7",
+      "pin_type": "passive",
+      "pin_name": "Pin_7",
+      "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+      "report_context": {
+        "section": "Connectivity",
+        "impact": "Passive or unclassified pin lonely on its own net.",
+        "standard_ref": ""
+      },
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "detector": "analyze_connectivity",
+      "rule_id": "NT-001",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "category": "connectivity",
+      "summary": "Single-pin net: J1.Pin_1 only connects to J1.1 (Pin_1) (passive)",
+      "description": "Net '__unnamed_4' has exactly one pin: J1.1 (Pin_1), pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+      "components": [
+        "J1"
+      ],
+      "nets": [
+        "__unnamed_4"
+      ],
+      "pins": [
+        "J1.1"
+      ],
+      "net_display_name": "J1.Pin_1",
+      "pin_type": "passive",
+      "pin_name": "Pin_1",
+      "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+      "report_context": {
+        "section": "Connectivity",
+        "impact": "Passive or unclassified pin lonely on its own net.",
+        "standard_ref": ""
+      },
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "detector": "analyze_connectivity",
+      "rule_id": "NT-001",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "category": "connectivity",
+      "summary": "Single-pin net: J1.Pin_2 only connects to J1.2 (Pin_2) (passive)",
+      "description": "Net '__unnamed_5' has exactly one pin: J1.2 (Pin_2), pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+      "components": [
+        "J1"
+      ],
+      "nets": [
+        "__unnamed_5"
+      ],
+      "pins": [
+        "J1.2"
+      ],
+      "net_display_name": "J1.Pin_2",
+      "pin_type": "passive",
+      "pin_name": "Pin_2",
+      "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+      "report_context": {
+        "section": "Connectivity",
+        "impact": "Passive or unclassified pin lonely on its own net.",
+        "standard_ref": ""
+      },
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "detector": "analyze_connectivity",
+      "rule_id": "NT-001",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "category": "connectivity",
+      "summary": "Single-pin net: J1.Pin_3 only connects to J1.3 (Pin_3) (passive)",
+      "description": "Net '__unnamed_6' has exactly one pin: J1.3 (Pin_3), pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+      "components": [
+        "J1"
+      ],
+      "nets": [
+        "__unnamed_6"
+      ],
+      "pins": [
+        "J1.3"
+      ],
+      "net_display_name": "J1.Pin_3",
+      "pin_type": "passive",
+      "pin_name": "Pin_3",
+      "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+      "report_context": {
+        "section": "Connectivity",
+        "impact": "Passive or unclassified pin lonely on its own net.",
+        "standard_ref": ""
+      },
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "detector": "analyze_connectivity",
+      "rule_id": "NT-001",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "category": "connectivity",
+      "summary": "Single-pin net: J1.Pin_4 only connects to J1.4 (Pin_4) (passive)",
+      "description": "Net '__unnamed_7' has exactly one pin: J1.4 (Pin_4), pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+      "components": [
+        "J1"
+      ],
+      "nets": [
+        "__unnamed_7"
+      ],
+      "pins": [
+        "J1.4"
+      ],
+      "net_display_name": "J1.Pin_4",
+      "pin_type": "passive",
+      "pin_name": "Pin_4",
+      "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+      "report_context": {
+        "section": "Connectivity",
+        "impact": "Passive or unclassified pin lonely on its own net.",
+        "standard_ref": ""
+      },
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "detector": "analyze_connectivity",
+      "rule_id": "NT-001",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "category": "connectivity",
+      "summary": "Single-pin net: J1.Pin_5 only connects to J1.5 (Pin_5) (passive)",
+      "description": "Net '__unnamed_8' has exactly one pin: J1.5 (Pin_5), pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+      "components": [
+        "J1"
+      ],
+      "nets": [
+        "__unnamed_8"
+      ],
+      "pins": [
+        "J1.5"
+      ],
+      "net_display_name": "J1.Pin_5",
+      "pin_type": "passive",
+      "pin_name": "Pin_5",
+      "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+      "report_context": {
+        "section": "Connectivity",
+        "impact": "Passive or unclassified pin lonely on its own net.",
+        "standard_ref": ""
+      },
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "detector": "analyze_connectivity",
+      "rule_id": "NT-001",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "category": "connectivity",
+      "summary": "Single-pin net: J1.Pin_6 only connects to J1.6 (Pin_6) (passive)",
+      "description": "Net '__unnamed_9' has exactly one pin: J1.6 (Pin_6), pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+      "components": [
+        "J1"
+      ],
+      "nets": [
+        "__unnamed_9"
+      ],
+      "pins": [
+        "J1.6"
+      ],
+      "net_display_name": "J1.Pin_6",
+      "pin_type": "passive",
+      "pin_name": "Pin_6",
+      "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+      "report_context": {
+        "section": "Connectivity",
+        "impact": "Passive or unclassified pin lonely on its own net.",
+        "standard_ref": ""
+      },
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "detector": "analyze_connectivity",
+      "rule_id": "NT-001",
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "category": "connectivity",
+      "summary": "Single-pin net: U1.Vadj only connects to U1.7 (Vadj) (input)",
+      "description": "Net '__unnamed_11' has exactly one pin: U1.7 (Vadj), pin_type='input'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+      "components": [
+        "U1"
+      ],
+      "nets": [
+        "__unnamed_11"
+      ],
+      "pins": [
+        "U1.7"
+      ],
+      "net_display_name": "U1.Vadj",
+      "pin_type": "input",
+      "pin_name": "Vadj",
+      "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+      "report_context": {
+        "section": "Connectivity",
+        "impact": "Likely unfinished wiring: a driven or powered pin has no counterpart.",
+        "standard_ref": ""
+      },
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "detector": "audit_power_pin_dc_paths",
+      "rule_id": "PP-001",
+      "severity": "error",
+      "confidence": "heuristic",
+      "evidence_source": "topology",
+      "category": "power",
+      "summary": "IC power pin U1.3 (GND) has no DC path to a power rail (net '__unnamed_1')",
+      "description": "Pin U1.3 (GND) is type=power_in on net '__unnamed_1'. Graph walk (\u22642 hops, rejecting capacitor edges, accepting resistors\u22641\u03a9, inductors, ferrite beads, bridged solder jumpers) did not reach a named power rail. The pin is likely AC-coupled to ground only \u2014 the IC will not power up reliably.",
+      "components": [
+        "U1"
+      ],
+      "nets": [
+        "__unnamed_1"
+      ],
+      "pins": [
+        "U1.3 (GND)"
+      ],
+      "start_net": "__unnamed_1",
+      "visited_nets": [
+        "__unnamed_1"
+      ],
+      "source_path": "none",
+      "recommendation": "Verify the schematic for this pin: the DC route must go through a conducting element (direct wire, 0\u03a9 resistor, inductor, ferrite bead, or bridged solder jumper) \u2014 not a capacitor. If the intent was to tie VCC through an LC filter, add the missing inductor or 0\u03a9 in series.",
+      "report_context": {
+        "section": "Power \u2014 DC Continuity",
+        "impact": "IC supply floats DC; board will not run.",
+        "standard_ref": ""
+      },
+      "provenance": {
+        "evidence": "pp_dc_path_audit",
+        "confidence": "deterministic",
+        "claimed_components": [
+          "U1"
+        ],
+        "excluded_by": [],
+        "suppressed_candidates": []
+      },
+      "detection_id": "",
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "detector": "audit_power_pin_dc_paths",
+      "rule_id": "PP-001",
+      "severity": "error",
+      "confidence": "heuristic",
+      "evidence_source": "topology",
+      "category": "power",
+      "summary": "IC power pin U1.1 (Vin) has no DC path to a power rail (net '__unnamed_2')",
+      "description": "Pin U1.1 (Vin) is type=power_in on net '__unnamed_2'. Graph walk (\u22642 hops, rejecting capacitor edges, accepting resistors\u22641\u03a9, inductors, ferrite beads, bridged solder jumpers) did not reach a named power rail. The pin is likely AC-coupled to ground only \u2014 the IC will not power up reliably.",
+      "components": [
+        "U1"
+      ],
+      "nets": [
+        "__unnamed_2"
+      ],
+      "pins": [
+        "U1.1 (Vin)"
+      ],
+      "start_net": "__unnamed_2",
+      "visited_nets": [
+        "__unnamed_2"
+      ],
+      "source_path": "none",
+      "recommendation": "Verify the schematic for this pin: the DC route must go through a conducting element (direct wire, 0\u03a9 resistor, inductor, ferrite bead, or bridged solder jumper) \u2014 not a capacitor. If the intent was to tie VCC through an LC filter, add the missing inductor or 0\u03a9 in series.",
+      "report_context": {
+        "section": "Power \u2014 DC Continuity",
+        "impact": "IC supply floats DC; board will not run.",
+        "standard_ref": ""
+      },
+      "provenance": {
+        "evidence": "pp_dc_path_audit",
+        "confidence": "deterministic",
+        "claimed_components": [
+          "U1"
+        ],
+        "excluded_by": [],
+        "suppressed_candidates": []
+      },
+      "detection_id": "",
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "ref": "U1",
+      "value": "YDS512F",
+      "lib_id": "OU_Power:YDS512F",
+      "topology": "LDO",
+      "input_rail": "__unnamed_2",
+      "output_rail": "__unnamed_0",
+      "fb_net": "__unnamed_11",
+      "detector": "detect_power_regulators",
+      "rule_id": "PR-DET",
+      "category": "power_management",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "summary": "Regulator U1 LDO",
+      "description": "Power regulator (LDO) detected",
+      "components": [
+        "U1"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "",
+      "report_context": {
+        "section": "Power Management",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "provenance": {
+        "evidence": "reg_keyword",
+        "confidence": "heuristic",
+        "claimed_components": [
+          "U1"
+        ],
+        "excluded_by": [],
+        "suppressed_candidates": []
+      },
+      "output_capacitors": [
+        {
+          "ref": "C5",
+          "value": "470u",
+          "farads": 0.00047,
+          "dielectric": "X7R"
+        },
+        {
+          "ref": "C4",
+          "value": "100u",
+          "farads": 9.999999999999999e-05,
+          "dielectric": "X7R"
+        }
+      ],
+      "input_capacitors": [
+        {
+          "ref": "C1",
+          "value": "220u",
+          "farads": 0.00021999999999999998,
+          "dielectric": "X7R"
+        },
+        {
+          "ref": "C2",
+          "value": "47u",
+          "farads": 4.7e-05,
+          "dielectric": "X7R"
+        },
+        {
+          "ref": "C3",
+          "value": "2.2u",
+          "farads": 2.2e-06,
+          "dielectric": "X7R"
+        }
+      ],
+      "detection_id": "power_regulators:9b40a285cf79",
+      "stages": [
+        "schematic"
+      ]
+    },
+    {
+      "detector": "audit_sourcing_gate",
+      "rule_id": "SS-002",
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "bom",
+      "category": "sourcing",
+      "summary": "Sourcing gap: 4/7 unique BOM parts have an MPN (57%). Populate before fab.",
+      "description": "Sourcing audit: 4 of 7 unique BOM lines (grouped by value + footprint) carry a manufacturer part number (57.1%). Pre-fab readiness requires 100% coverage; production assembly requires all parts sourceable via one of the supported distributors.",
+      "components": [
+        "C3",
+        "J1",
+        "U1"
+      ],
+      "nets": [],
+      "pins": [],
+      "mpn_coverage_percent": 57.1,
+      "missing_mpn_lines": 3,
+      "missing_mpn_refs": 3,
+      "total_bom_lines": 7,
+      "recommendation": "Populate the MPN field on the listed refs (use the digikey / mouser / lcsc / element14 skill to search by value/footprint when the MPN isn't already known).",
+      "report_context": {
+        "section": "Sourcing",
+        "impact": "Pre-fab gate: board cannot be ordered until MPN coverage reaches 100%.",
+        "standard_ref": ""
+      },
+      "stages": [
+        "pre_fab"
+      ]
+    }
+  ],
+  "bom": [
+    {
+      "value": "220u",
+      "footprint": "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm",
+      "mpn": "\u30eb\u30d3\u30b3\u30f3ZLH",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Polarized capacitor",
+      "references": [
+        "C1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "capacitor"
+    },
+    {
+      "value": "47u",
+      "footprint": "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm",
+      "mpn": "47\u03bcF63V125\u2103 PZJ",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Polarized capacitor",
+      "references": [
+        "C2"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "capacitor"
+    },
+    {
+      "value": "2.2u",
+      "footprint": "Capacitor_THT:C_Disc_D6.0mm_W4.4mm_P5.00mm",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Unpolarized capacitor",
+      "references": [
+        "C3"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "capacitor"
+    },
+    {
+      "value": "100u",
+      "footprint": "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm",
+      "mpn": "100\u03bcF50V125\u2103 PZF",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Polarized capacitor",
+      "references": [
+        "C4"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "capacitor"
+    },
+    {
+      "value": "470u",
+      "footprint": "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm",
+      "mpn": "\u30eb\u30d3\u30b3\u30f3ZLH",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Polarized capacitor",
+      "references": [
+        "C5"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "capacitor"
+    },
+    {
+      "value": "Conn_01x07_Pin",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Horizontal",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Generic connector, single row, 01x07, script generated",
+      "references": [
+        "J1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "connector"
+    },
+    {
+      "value": "YDS512F",
+      "footprint": "OU_Power:YDS512F",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "",
+      "references": [
+        "U1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "ic"
+    }
+  ],
+  "components": [
+    {
+      "reference": "C4",
+      "value": "100u",
+      "lib_id": "Device:C_Polarized",
+      "lib_name": "",
+      "footprint": "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm",
+      "datasheet": "",
+      "description": "Polarized capacitor",
+      "mpn": "100\u03bcF50V125\u2103 PZF",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "x": 64.77,
+      "y": 46.99,
+      "angle": 0.0,
+      "mirror_x": false,
+      "mirror_y": false,
+      "unit": 1,
+      "uuid": "376cd528-bb0d-47ab-a3ab-791a59e5bcd0",
+      "in_bom": true,
+      "dnp": false,
+      "on_board": true,
+      "pin_uuids": {
+        "1": "4c7cad8a-c146-493b-a62c-214c985741ba",
+        "2": "d0172993-c31f-4278-bdbb-6fa197f239da"
+      },
+      "type": "capacitor",
+      "keywords": "cap capacitor",
+      "_sheet": 0,
+      "category": "capacitor",
+      "parsed_value": 9.999999999999999e-05,
+      "pin_nets": {
+        "1": "__unnamed_0",
+        "2": "__unnamed_1"
+      }
+    },
+    {
+      "reference": "C1",
+      "value": "220u",
+      "lib_id": "Device:C_Polarized",
+      "lib_name": "",
+      "footprint": "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm",
+      "datasheet": "",
+      "description": "Polarized capacitor",
+      "mpn": "\u30eb\u30d3\u30b3\u30f3ZLH",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "x": 26.67,
+      "y": 46.99,
+      "angle": 0.0,
+      "mirror_x": false,
+      "mirror_y": false,
+      "unit": 1,
+      "uuid": "7d07a164-140f-4e7c-b5b3-292fad7457b6",
+      "in_bom": true,
+      "dnp": false,
+      "on_board": true,
+      "pin_uuids": {
+        "1": "58064889-8ab8-4f63-bd0c-4c6fb8e84ee1",
+        "2": "d51a6090-6061-4d68-a4be-903d96696fbc"
+      },
+      "type": "capacitor",
+      "keywords": "cap capacitor",
+      "_sheet": 0,
+      "category": "capacitor",
+      "parsed_value": 0.00021999999999999998,
+      "pin_nets": {
+        "2": "__unnamed_1",
+        "1": "__unnamed_2"
+      }
+    },
+    {
+      "reference": "C2",
+      "value": "47u",
+      "lib_id": "Device:C_Polarized",
+      "lib_name": "",
+      "footprint": "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm",
+      "datasheet": "",
+      "description": "Polarized capacitor",
+      "mpn": "47\u03bcF63V125\u2103 PZJ",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "x": 34.29,
+      "y": 46.99,
+      "angle": 0.0,
+      "mirror_x": false,
+      "mirror_y": false,
+      "unit": 1,
+      "uuid": "924453ee-9d3d-4f36-8c5f-f5b03f9e275a",
+      "in_bom": true,
+      "dnp": false,
+      "on_board": true,
+      "pin_uuids": {
+        "1": "99c1eea9-7fe2-4627-ba46-435f374edf5d",
+        "2": "c93304fa-7340-4c5e-b27a-4f02fbe20029"
+      },
+      "type": "capacitor",
+      "keywords": "cap capacitor",
+      "_sheet": 0,
+      "category": "capacitor",
+      "parsed_value": 4.7e-05,
+      "pin_nets": {
+        "2": "__unnamed_1",
+        "1": "__unnamed_2"
+      }
+    },
+    {
+      "reference": "C3",
+      "value": "2.2u",
+      "lib_id": "Device:C",
+      "lib_name": "",
+      "footprint": "Capacitor_THT:C_Disc_D6.0mm_W4.4mm_P5.00mm",
+      "datasheet": "",
+      "description": "Unpolarized capacitor",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "x": 41.91,
+      "y": 46.99,
+      "angle": 0.0,
+      "mirror_x": false,
+      "mirror_y": false,
+      "unit": 1,
+      "uuid": "a3fade3f-e580-4b80-a2b3-8f74e8ce6e13",
+      "in_bom": true,
+      "dnp": false,
+      "on_board": true,
+      "pin_uuids": {
+        "1": "a8bc439f-e268-4668-8af1-91dd9344753a",
+        "2": "661b596f-d22d-4343-9606-4df7c4a12d29"
+      },
+      "type": "capacitor",
+      "keywords": "cap capacitor",
+      "_sheet": 0,
+      "category": "capacitor",
+      "parsed_value": 2.2e-06,
+      "pin_nets": {
+        "1": "__unnamed_2",
+        "2": "__unnamed_3"
+      }
+    },
+    {
+      "reference": "J1",
+      "value": "Conn_01x07_Pin",
+      "lib_id": "Connector:Conn_01x07_Pin",
+      "lib_name": "",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Horizontal",
+      "datasheet": "",
+      "description": "Generic connector, single row, 01x07, script generated",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "x": 48.26,
+      "y": 80.01,
+      "angle": 270.0,
+      "mirror_x": true,
+      "mirror_y": false,
+      "unit": 1,
+      "uuid": "a7fbcd59-f762-4f62-b4d1-454192d4ba0e",
+      "in_bom": true,
+      "dnp": false,
+      "on_board": true,
+      "pin_uuids": {
+        "3": "d5549c11-5949-49bb-a618-3faee1c1a231",
+        "5": "2a53e084-eb3e-4119-aad2-6f4faf892dc6",
+        "7": "e634f1da-524d-434e-9c1a-3d5b26017279",
+        "4": "7edebad5-aaa7-4d2d-a147-4d89d7ea6c02",
+        "2": "3d8c1e8e-93bc-4cb4-8a69-fea6b6125db4",
+        "1": "4e0bdd51-238c-4814-a0ac-395369d2731d",
+        "6": "661a27fb-6f46-4efa-be5f-c41da98e15b0"
+      },
+      "type": "connector",
+      "keywords": "connector",
+      "is_external_connector": true,
+      "connector_layout": "dual",
+      "_sheet": 0,
+      "category": "connector",
+      "pin_nets": {
+        "1": "__unnamed_4",
+        "2": "__unnamed_5",
+        "3": "__unnamed_6",
+        "4": "__unnamed_7",
+        "5": "__unnamed_8",
+        "6": "__unnamed_9",
+        "7": "__unnamed_10"
+      }
+    },
+    {
+      "reference": "U1",
+      "value": "YDS512F",
+      "lib_id": "OU_Power:YDS512F",
+      "lib_name": "",
+      "footprint": "OU_Power:YDS512F",
+      "datasheet": "",
+      "description": "",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "x": 53.34,
+      "y": 27.94,
+      "angle": 0.0,
+      "mirror_x": false,
+      "mirror_y": false,
+      "unit": 1,
+      "uuid": "c4abdd88-4efb-425a-a086-9e0644ab6824",
+      "in_bom": true,
+      "dnp": false,
+      "on_board": true,
+      "pin_uuids": {
+        "6": "57cf157f-1765-457c-a750-473bcac2e31c",
+        "5": "177a5fa6-e74d-4815-9d53-e97ed69271f2",
+        "7": "11ae9d32-666d-4496-8486-de37bb4a3e2d",
+        "4": "10c4abb9-907c-40b5-a703-07b319e26ae3",
+        "2": "64961295-6c60-4a22-aa2b-209987fbe7fd",
+        "3": "99d904d7-f616-449f-9b2e-c16b53264b1e",
+        "1": "04457546-4959-47a7-b590-20c89e0f6d8a"
+      },
+      "type": "ic",
+      "keywords": "",
+      "functional_class": "other_ic",
+      "_sheet": 0,
+      "category": "ic",
+      "pin_nets": {
+        "5": "__unnamed_0",
+        "6": "__unnamed_0",
+        "3": "__unnamed_1",
+        "4": "__unnamed_1",
+        "1": "__unnamed_2",
+        "2": "__unnamed_2",
+        "7": "__unnamed_11"
+      }
+    },
+    {
+      "reference": "C5",
+      "value": "470u",
+      "lib_id": "Device:C_Polarized",
+      "lib_name": "",
+      "footprint": "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm",
+      "datasheet": "",
+      "description": "Polarized capacitor",
+      "mpn": "\u30eb\u30d3\u30b3\u30f3ZLH",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "x": 72.39,
+      "y": 46.99,
+      "angle": 0.0,
+      "mirror_x": false,
+      "mirror_y": false,
+      "unit": 1,
+      "uuid": "d1b97242-7719-47c4-be98-5aca05f40a94",
+      "in_bom": true,
+      "dnp": false,
+      "on_board": true,
+      "pin_uuids": {
+        "1": "5b058893-cffa-4cd1-8881-fa17c46a4088",
+        "2": "44f74f71-5c7d-43ec-ab50-11c110e89285"
+      },
+      "type": "capacitor",
+      "keywords": "cap capacitor",
+      "_sheet": 0,
+      "category": "capacitor",
+      "parsed_value": 0.00047,
+      "pin_nets": {
+        "1": "__unnamed_0",
+        "2": "__unnamed_1"
+      }
+    }
+  ],
+  "nets": {
+    "__unnamed_0": {
+      "name": "__unnamed_0",
+      "pins": [
+        {
+          "component": "C4",
+          "pin_number": "1",
+          "pin_name": "",
+          "pin_type": "passive"
+        },
+        {
+          "component": "U1",
+          "pin_number": "5",
+          "pin_name": "VOUT",
+          "pin_type": "input"
+        },
+        {
+          "component": "U1",
+          "pin_number": "6",
+          "pin_name": "VOUT",
+          "pin_type": "passive"
+        },
+        {
+          "component": "C5",
+          "pin_number": "1",
+          "pin_name": "",
+          "pin_type": "passive"
+        }
+      ],
+      "point_count": 11,
+      "no_connect": false,
+      "labels": []
+    },
+    "__unnamed_1": {
+      "name": "__unnamed_1",
+      "pins": [
+        {
+          "component": "C4",
+          "pin_number": "2",
+          "pin_name": "",
+          "pin_type": "passive"
+        },
+        {
+          "component": "C1",
+          "pin_number": "2",
+          "pin_name": "",
+          "pin_type": "passive"
+        },
+        {
+          "component": "C2",
+          "pin_number": "2",
+          "pin_name": "",
+          "pin_type": "passive"
+        },
+        {
+          "component": "U1",
+          "pin_number": "3",
+          "pin_name": "GND",
+          "pin_type": "power_in"
+        },
+        {
+          "component": "U1",
+          "pin_number": "4",
+          "pin_name": "GND",
+          "pin_type": "passive"
+        },
+        {
+          "component": "C5",
+          "pin_number": "2",
+          "pin_name": "",
+          "pin_type": "passive"
+        }
+      ],
+      "point_count": 14,
+      "no_connect": false,
+      "labels": []
+    },
+    "__unnamed_2": {
+      "name": "__unnamed_2",
+      "pins": [
+        {
+          "component": "C1",
+          "pin_number": "1",
+          "pin_name": "",
+          "pin_type": "passive"
+        },
+        {
+          "component": "C2",
+          "pin_number": "1",
+          "pin_name": "",
+          "pin_type": "passive"
+        },
+        {
+          "component": "C3",
+          "pin_number": "1",
+          "pin_name": "",
+          "pin_type": "passive"
+        },
+        {
+          "component": "U1",
+          "pin_number": "1",
+          "pin_name": "Vin",
+          "pin_type": "power_in"
+        },
+        {
+          "component": "U1",
+          "pin_number": "2",
+          "pin_name": "Vin",
+          "pin_type": "passive"
+        }
+      ],
+      "point_count": 13,
+      "no_connect": false,
+      "labels": []
+    },
+    "__unnamed_3": {
+      "name": "__unnamed_3",
+      "pins": [
+        {
+          "component": "C3",
+          "pin_number": "2",
+          "pin_name": "",
+          "pin_type": "passive"
+        }
+      ],
+      "point_count": 2,
+      "no_connect": false,
+      "labels": []
+    },
+    "__unnamed_4": {
+      "name": "__unnamed_4",
+      "pins": [
+        {
+          "component": "J1",
+          "pin_number": "1",
+          "pin_name": "Pin_1",
+          "pin_type": "passive"
+        }
+      ],
+      "point_count": 1,
+      "no_connect": false,
+      "labels": []
+    },
+    "__unnamed_5": {
+      "name": "__unnamed_5",
+      "pins": [
+        {
+          "component": "J1",
+          "pin_number": "2",
+          "pin_name": "Pin_2",
+          "pin_type": "passive"
+        }
+      ],
+      "point_count": 1,
+      "no_connect": false,
+      "labels": []
+    },
+    "__unnamed_6": {
+      "name": "__unnamed_6",
+      "pins": [
+        {
+          "component": "J1",
+          "pin_number": "3",
+          "pin_name": "Pin_3",
+          "pin_type": "passive"
+        }
+      ],
+      "point_count": 1,
+      "no_connect": false,
+      "labels": []
+    },
+    "__unnamed_7": {
+      "name": "__unnamed_7",
+      "pins": [
+        {
+          "component": "J1",
+          "pin_number": "4",
+          "pin_name": "Pin_4",
+          "pin_type": "passive"
+        }
+      ],
+      "point_count": 1,
+      "no_connect": false,
+      "labels": []
+    },
+    "__unnamed_8": {
+      "name": "__unnamed_8",
+      "pins": [
+        {
+          "component": "J1",
+          "pin_number": "5",
+          "pin_name": "Pin_5",
+          "pin_type": "passive"
+        }
+      ],
+      "point_count": 1,
+      "no_connect": false,
+      "labels": []
+    },
+    "__unnamed_9": {
+      "name": "__unnamed_9",
+      "pins": [
+        {
+          "component": "J1",
+          "pin_number": "6",
+          "pin_name": "Pin_6",
+          "pin_type": "passive"
+        }
+      ],
+      "point_count": 1,
+      "no_connect": false,
+      "labels": []
+    },
+    "__unnamed_10": {
+      "name": "__unnamed_10",
+      "pins": [
+        {
+          "component": "J1",
+          "pin_number": "7",
+          "pin_name": "Pin_7",
+          "pin_type": "passive"
+        }
+      ],
+      "point_count": 1,
+      "no_connect": false,
+      "labels": []
+    },
+    "__unnamed_11": {
+      "name": "__unnamed_11",
+      "pins": [
+        {
+          "component": "U1",
+          "pin_number": "7",
+          "pin_name": "Vadj",
+          "pin_type": "input"
+        }
+      ],
+      "point_count": 2,
+      "no_connect": false,
+      "labels": [],
+      "display_name": "U1.Vadj"
+    }
+  },
+  "subcircuits": [
+    {
+      "center_ic": "U1",
+      "ic_value": "YDS512F",
+      "ic_mpn": "",
+      "ic_lib_id": "OU_Power:YDS512F",
+      "neighbor_components": [
+        {
+          "ref": "C1",
+          "value": "220u",
+          "type": "capacitor"
+        },
+        {
+          "ref": "C2",
+          "value": "47u",
+          "type": "capacitor"
+        },
+        {
+          "ref": "C3",
+          "value": "2.2u",
+          "type": "capacitor"
+        },
+        {
+          "ref": "C4",
+          "value": "100u",
+          "type": "capacitor"
+        },
+        {
+          "ref": "C5",
+          "value": "470u",
+          "type": "capacitor"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "ic_pin_analysis": [
+    {
+      "reference": "J1",
+      "value": "Conn_01x07_Pin",
+      "type": "connector",
+      "lib_id": "Connector:Conn_01x07_Pin",
+      "mpn": "",
+      "description": "Generic connector, single row, 01x07, script generated",
+      "datasheet": "",
+      "function": "",
+      "total_pins": 7,
+      "unconnected_pins": 0,
+      "pins": [
+        {
+          "pin_number": "1",
+          "pin_name": "Pin_1",
+          "pin_type": "passive",
+          "net": "__unnamed_4",
+          "connected_to": []
+        },
+        {
+          "pin_number": "2",
+          "pin_name": "Pin_2",
+          "pin_type": "passive",
+          "net": "__unnamed_5",
+          "connected_to": []
+        },
+        {
+          "pin_number": "3",
+          "pin_name": "Pin_3",
+          "pin_type": "passive",
+          "net": "__unnamed_6",
+          "connected_to": []
+        },
+        {
+          "pin_number": "4",
+          "pin_name": "Pin_4",
+          "pin_type": "passive",
+          "net": "__unnamed_7",
+          "connected_to": []
+        },
+        {
+          "pin_number": "5",
+          "pin_name": "Pin_5",
+          "pin_type": "passive",
+          "net": "__unnamed_8",
+          "connected_to": []
+        },
+        {
+          "pin_number": "6",
+          "pin_name": "Pin_6",
+          "pin_type": "passive",
+          "net": "__unnamed_9",
+          "connected_to": []
+        },
+        {
+          "pin_number": "7",
+          "pin_name": "Pin_7",
+          "pin_type": "passive",
+          "net": "__unnamed_10",
+          "connected_to": []
+        }
+      ],
+      "power_pins": [],
+      "signal_pins": [
+        {
+          "pin_number": "1",
+          "pin_name": "Pin_1",
+          "pin_type": "passive",
+          "net": "__unnamed_4",
+          "connected_to": []
+        },
+        {
+          "pin_number": "2",
+          "pin_name": "Pin_2",
+          "pin_type": "passive",
+          "net": "__unnamed_5",
+          "connected_to": []
+        },
+        {
+          "pin_number": "3",
+          "pin_name": "Pin_3",
+          "pin_type": "passive",
+          "net": "__unnamed_6",
+          "connected_to": []
+        },
+        {
+          "pin_number": "4",
+          "pin_name": "Pin_4",
+          "pin_type": "passive",
+          "net": "__unnamed_7",
+          "connected_to": []
+        },
+        {
+          "pin_number": "5",
+          "pin_name": "Pin_5",
+          "pin_type": "passive",
+          "net": "__unnamed_8",
+          "connected_to": []
+        },
+        {
+          "pin_number": "6",
+          "pin_name": "Pin_6",
+          "pin_type": "passive",
+          "net": "__unnamed_9",
+          "connected_to": []
+        },
+        {
+          "pin_number": "7",
+          "pin_name": "Pin_7",
+          "pin_type": "passive",
+          "net": "__unnamed_10",
+          "connected_to": []
+        }
+      ],
+      "decoupling_caps_by_rail": {}
+    },
+    {
+      "reference": "U1",
+      "value": "YDS512F",
+      "type": "ic",
+      "lib_id": "OU_Power:YDS512F",
+      "mpn": "",
+      "description": "",
+      "datasheet": "",
+      "function": "",
+      "total_pins": 7,
+      "unconnected_pins": 0,
+      "pins": [
+        {
+          "pin_number": "1",
+          "pin_name": "Vin",
+          "pin_type": "power_in",
+          "net": "__unnamed_2",
+          "connected_to": [
+            {
+              "ref": "C1",
+              "value": "220u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            },
+            {
+              "ref": "C2",
+              "value": "47u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            },
+            {
+              "ref": "C3",
+              "value": "2.2u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            }
+          ],
+          "has_decoupling_cap": true,
+          "decoupling_caps": [
+            {
+              "ref": "C1",
+              "value": "220u"
+            },
+            {
+              "ref": "C2",
+              "value": "47u"
+            },
+            {
+              "ref": "C3",
+              "value": "2.2u"
+            }
+          ]
+        },
+        {
+          "pin_number": "2",
+          "pin_name": "Vin",
+          "pin_type": "passive",
+          "net": "__unnamed_2",
+          "connected_to": [
+            {
+              "ref": "C1",
+              "value": "220u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            },
+            {
+              "ref": "C2",
+              "value": "47u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            },
+            {
+              "ref": "C3",
+              "value": "2.2u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            }
+          ],
+          "has_decoupling_cap": true,
+          "decoupling_caps": [
+            {
+              "ref": "C1",
+              "value": "220u"
+            },
+            {
+              "ref": "C2",
+              "value": "47u"
+            },
+            {
+              "ref": "C3",
+              "value": "2.2u"
+            }
+          ]
+        },
+        {
+          "pin_number": "3",
+          "pin_name": "GND",
+          "pin_type": "power_in",
+          "net": "__unnamed_1",
+          "connected_to": [
+            {
+              "ref": "C4",
+              "value": "100u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            },
+            {
+              "ref": "C1",
+              "value": "220u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            },
+            {
+              "ref": "C2",
+              "value": "47u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            },
+            {
+              "ref": "C5",
+              "value": "470u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            }
+          ],
+          "has_decoupling_cap": true,
+          "decoupling_caps": [
+            {
+              "ref": "C4",
+              "value": "100u"
+            },
+            {
+              "ref": "C1",
+              "value": "220u"
+            },
+            {
+              "ref": "C2",
+              "value": "47u"
+            },
+            {
+              "ref": "C5",
+              "value": "470u"
+            }
+          ]
+        },
+        {
+          "pin_number": "4",
+          "pin_name": "GND",
+          "pin_type": "passive",
+          "net": "__unnamed_1",
+          "connected_to": [
+            {
+              "ref": "C4",
+              "value": "100u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            },
+            {
+              "ref": "C1",
+              "value": "220u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            },
+            {
+              "ref": "C2",
+              "value": "47u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            },
+            {
+              "ref": "C5",
+              "value": "470u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            }
+          ],
+          "has_decoupling_cap": true,
+          "decoupling_caps": [
+            {
+              "ref": "C4",
+              "value": "100u"
+            },
+            {
+              "ref": "C1",
+              "value": "220u"
+            },
+            {
+              "ref": "C2",
+              "value": "47u"
+            },
+            {
+              "ref": "C5",
+              "value": "470u"
+            }
+          ]
+        },
+        {
+          "pin_number": "5",
+          "pin_name": "VOUT",
+          "pin_type": "input",
+          "net": "__unnamed_0",
+          "connected_to": [
+            {
+              "ref": "C4",
+              "value": "100u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            },
+            {
+              "ref": "C5",
+              "value": "470u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            }
+          ],
+          "has_decoupling_cap": true,
+          "decoupling_caps": [
+            {
+              "ref": "C4",
+              "value": "100u"
+            },
+            {
+              "ref": "C5",
+              "value": "470u"
+            }
+          ]
+        },
+        {
+          "pin_number": "6",
+          "pin_name": "VOUT",
+          "pin_type": "passive",
+          "net": "__unnamed_0",
+          "connected_to": [
+            {
+              "ref": "C4",
+              "value": "100u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            },
+            {
+              "ref": "C5",
+              "value": "470u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            }
+          ],
+          "has_decoupling_cap": true,
+          "decoupling_caps": [
+            {
+              "ref": "C4",
+              "value": "100u"
+            },
+            {
+              "ref": "C5",
+              "value": "470u"
+            }
+          ]
+        },
+        {
+          "pin_number": "7",
+          "pin_name": "Vadj",
+          "pin_type": "input",
+          "net": "__unnamed_11",
+          "connected_to": []
+        }
+      ],
+      "power_pins": [
+        {
+          "pin_number": "1",
+          "pin_name": "Vin",
+          "pin_type": "power_in",
+          "net": "__unnamed_2",
+          "connected_to": [
+            {
+              "ref": "C1",
+              "value": "220u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            },
+            {
+              "ref": "C2",
+              "value": "47u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            },
+            {
+              "ref": "C3",
+              "value": "2.2u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            }
+          ],
+          "has_decoupling_cap": true,
+          "decoupling_caps": [
+            {
+              "ref": "C1",
+              "value": "220u"
+            },
+            {
+              "ref": "C2",
+              "value": "47u"
+            },
+            {
+              "ref": "C3",
+              "value": "2.2u"
+            }
+          ]
+        },
+        {
+          "pin_number": "2",
+          "pin_name": "Vin",
+          "pin_type": "passive",
+          "net": "__unnamed_2",
+          "connected_to": [
+            {
+              "ref": "C1",
+              "value": "220u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            },
+            {
+              "ref": "C2",
+              "value": "47u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            },
+            {
+              "ref": "C3",
+              "value": "2.2u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            }
+          ],
+          "has_decoupling_cap": true,
+          "decoupling_caps": [
+            {
+              "ref": "C1",
+              "value": "220u"
+            },
+            {
+              "ref": "C2",
+              "value": "47u"
+            },
+            {
+              "ref": "C3",
+              "value": "2.2u"
+            }
+          ]
+        },
+        {
+          "pin_number": "3",
+          "pin_name": "GND",
+          "pin_type": "power_in",
+          "net": "__unnamed_1",
+          "connected_to": [
+            {
+              "ref": "C4",
+              "value": "100u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            },
+            {
+              "ref": "C1",
+              "value": "220u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            },
+            {
+              "ref": "C2",
+              "value": "47u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            },
+            {
+              "ref": "C5",
+              "value": "470u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            }
+          ],
+          "has_decoupling_cap": true,
+          "decoupling_caps": [
+            {
+              "ref": "C4",
+              "value": "100u"
+            },
+            {
+              "ref": "C1",
+              "value": "220u"
+            },
+            {
+              "ref": "C2",
+              "value": "47u"
+            },
+            {
+              "ref": "C5",
+              "value": "470u"
+            }
+          ]
+        },
+        {
+          "pin_number": "4",
+          "pin_name": "GND",
+          "pin_type": "passive",
+          "net": "__unnamed_1",
+          "connected_to": [
+            {
+              "ref": "C4",
+              "value": "100u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            },
+            {
+              "ref": "C1",
+              "value": "220u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            },
+            {
+              "ref": "C2",
+              "value": "47u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            },
+            {
+              "ref": "C5",
+              "value": "470u",
+              "type": "capacitor",
+              "pin": "2",
+              "pin_name": ""
+            }
+          ],
+          "has_decoupling_cap": true,
+          "decoupling_caps": [
+            {
+              "ref": "C4",
+              "value": "100u"
+            },
+            {
+              "ref": "C1",
+              "value": "220u"
+            },
+            {
+              "ref": "C2",
+              "value": "47u"
+            },
+            {
+              "ref": "C5",
+              "value": "470u"
+            }
+          ]
+        },
+        {
+          "pin_number": "5",
+          "pin_name": "VOUT",
+          "pin_type": "input",
+          "net": "__unnamed_0",
+          "connected_to": [
+            {
+              "ref": "C4",
+              "value": "100u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            },
+            {
+              "ref": "C5",
+              "value": "470u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            }
+          ],
+          "has_decoupling_cap": true,
+          "decoupling_caps": [
+            {
+              "ref": "C4",
+              "value": "100u"
+            },
+            {
+              "ref": "C5",
+              "value": "470u"
+            }
+          ]
+        },
+        {
+          "pin_number": "6",
+          "pin_name": "VOUT",
+          "pin_type": "passive",
+          "net": "__unnamed_0",
+          "connected_to": [
+            {
+              "ref": "C4",
+              "value": "100u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            },
+            {
+              "ref": "C5",
+              "value": "470u",
+              "type": "capacitor",
+              "pin": "1",
+              "pin_name": ""
+            }
+          ],
+          "has_decoupling_cap": true,
+          "decoupling_caps": [
+            {
+              "ref": "C4",
+              "value": "100u"
+            },
+            {
+              "ref": "C5",
+              "value": "470u"
+            }
+          ]
+        }
+      ],
+      "signal_pins": [
+        {
+          "pin_number": "7",
+          "pin_name": "Vadj",
+          "pin_type": "input",
+          "net": "__unnamed_11",
+          "connected_to": []
+        }
+      ],
+      "decoupling_caps_by_rail": {
+        "__unnamed_2": [
+          {
+            "ref": "C1",
+            "value": "220u"
+          },
+          {
+            "ref": "C2",
+            "value": "47u"
+          },
+          {
+            "ref": "C3",
+            "value": "2.2u"
+          }
+        ],
+        "__unnamed_1": [
+          {
+            "ref": "C4",
+            "value": "100u"
+          },
+          {
+            "ref": "C1",
+            "value": "220u"
+          },
+          {
+            "ref": "C2",
+            "value": "47u"
+          },
+          {
+            "ref": "C5",
+            "value": "470u"
+          }
+        ],
+        "__unnamed_0": [
+          {
+            "ref": "C4",
+            "value": "100u"
+          },
+          {
+            "ref": "C5",
+            "value": "470u"
+          }
+        ]
+      }
+    }
+  ],
+  "design_analysis": {
+    "net_classification": {
+      "__unnamed_0": "signal",
+      "__unnamed_1": "power_internal",
+      "__unnamed_2": "power_internal",
+      "__unnamed_3": "signal",
+      "__unnamed_4": "signal",
+      "__unnamed_5": "signal",
+      "__unnamed_6": "signal",
+      "__unnamed_7": "signal",
+      "__unnamed_8": "signal",
+      "__unnamed_9": "signal",
+      "__unnamed_10": "signal",
+      "__unnamed_11": "signal"
+    },
+    "power_domains": {
+      "ic_power_rails": {
+        "U1": {
+          "value": "YDS512F",
+          "power_rails": [
+            "__unnamed_0",
+            "__unnamed_2"
+          ],
+          "io_rails": null
+        }
+      },
+      "domain_groups": {
+        "__unnamed_0": [
+          "U1"
+        ],
+        "__unnamed_2": [
+          "U1"
+        ]
+      }
+    },
+    "cross_domain_signals": [],
+    "bus_analysis": {
+      "i2c": [],
+      "spi": [],
+      "uart": [],
+      "can": []
+    },
+    "differential_pairs": [],
+    "erc_warnings": [],
+    "passive_warnings": []
+  },
+  "connectivity_issues": {
+    "unconnected_pins": [],
+    "single_pin_nets": [],
+    "single_pin_net_findings": [
+      {
+        "detector": "analyze_connectivity",
+        "rule_id": "NT-001",
+        "severity": "info",
+        "confidence": "deterministic",
+        "evidence_source": "topology",
+        "category": "connectivity",
+        "summary": "Single-pin net: __unnamed_3 only connects to C3.2 (passive)",
+        "description": "Net '__unnamed_3' has exactly one pin: C3.2, pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+        "components": [
+          "C3"
+        ],
+        "nets": [
+          "__unnamed_3"
+        ],
+        "pins": [
+          "C3.2"
+        ],
+        "net_display_name": "__unnamed_3",
+        "pin_type": "passive",
+        "pin_name": "",
+        "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+        "report_context": {
+          "section": "Connectivity",
+          "impact": "Passive or unclassified pin lonely on its own net.",
+          "standard_ref": ""
+        },
+        "stages": [
+          "schematic"
+        ]
+      },
+      {
+        "detector": "analyze_connectivity",
+        "rule_id": "NT-001",
+        "severity": "info",
+        "confidence": "deterministic",
+        "evidence_source": "topology",
+        "category": "connectivity",
+        "summary": "Single-pin net: J1.Pin_1 only connects to J1.1 (Pin_1) (passive)",
+        "description": "Net '__unnamed_4' has exactly one pin: J1.1 (Pin_1), pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+        "components": [
+          "J1"
+        ],
+        "nets": [
+          "__unnamed_4"
+        ],
+        "pins": [
+          "J1.1"
+        ],
+        "net_display_name": "J1.Pin_1",
+        "pin_type": "passive",
+        "pin_name": "Pin_1",
+        "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+        "report_context": {
+          "section": "Connectivity",
+          "impact": "Passive or unclassified pin lonely on its own net.",
+          "standard_ref": ""
+        },
+        "stages": [
+          "schematic"
+        ]
+      },
+      {
+        "detector": "analyze_connectivity",
+        "rule_id": "NT-001",
+        "severity": "info",
+        "confidence": "deterministic",
+        "evidence_source": "topology",
+        "category": "connectivity",
+        "summary": "Single-pin net: J1.Pin_2 only connects to J1.2 (Pin_2) (passive)",
+        "description": "Net '__unnamed_5' has exactly one pin: J1.2 (Pin_2), pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+        "components": [
+          "J1"
+        ],
+        "nets": [
+          "__unnamed_5"
+        ],
+        "pins": [
+          "J1.2"
+        ],
+        "net_display_name": "J1.Pin_2",
+        "pin_type": "passive",
+        "pin_name": "Pin_2",
+        "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+        "report_context": {
+          "section": "Connectivity",
+          "impact": "Passive or unclassified pin lonely on its own net.",
+          "standard_ref": ""
+        },
+        "stages": [
+          "schematic"
+        ]
+      },
+      {
+        "detector": "analyze_connectivity",
+        "rule_id": "NT-001",
+        "severity": "info",
+        "confidence": "deterministic",
+        "evidence_source": "topology",
+        "category": "connectivity",
+        "summary": "Single-pin net: J1.Pin_3 only connects to J1.3 (Pin_3) (passive)",
+        "description": "Net '__unnamed_6' has exactly one pin: J1.3 (Pin_3), pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+        "components": [
+          "J1"
+        ],
+        "nets": [
+          "__unnamed_6"
+        ],
+        "pins": [
+          "J1.3"
+        ],
+        "net_display_name": "J1.Pin_3",
+        "pin_type": "passive",
+        "pin_name": "Pin_3",
+        "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+        "report_context": {
+          "section": "Connectivity",
+          "impact": "Passive or unclassified pin lonely on its own net.",
+          "standard_ref": ""
+        },
+        "stages": [
+          "schematic"
+        ]
+      },
+      {
+        "detector": "analyze_connectivity",
+        "rule_id": "NT-001",
+        "severity": "info",
+        "confidence": "deterministic",
+        "evidence_source": "topology",
+        "category": "connectivity",
+        "summary": "Single-pin net: J1.Pin_4 only connects to J1.4 (Pin_4) (passive)",
+        "description": "Net '__unnamed_7' has exactly one pin: J1.4 (Pin_4), pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+        "components": [
+          "J1"
+        ],
+        "nets": [
+          "__unnamed_7"
+        ],
+        "pins": [
+          "J1.4"
+        ],
+        "net_display_name": "J1.Pin_4",
+        "pin_type": "passive",
+        "pin_name": "Pin_4",
+        "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+        "report_context": {
+          "section": "Connectivity",
+          "impact": "Passive or unclassified pin lonely on its own net.",
+          "standard_ref": ""
+        },
+        "stages": [
+          "schematic"
+        ]
+      },
+      {
+        "detector": "analyze_connectivity",
+        "rule_id": "NT-001",
+        "severity": "info",
+        "confidence": "deterministic",
+        "evidence_source": "topology",
+        "category": "connectivity",
+        "summary": "Single-pin net: J1.Pin_5 only connects to J1.5 (Pin_5) (passive)",
+        "description": "Net '__unnamed_8' has exactly one pin: J1.5 (Pin_5), pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+        "components": [
+          "J1"
+        ],
+        "nets": [
+          "__unnamed_8"
+        ],
+        "pins": [
+          "J1.5"
+        ],
+        "net_display_name": "J1.Pin_5",
+        "pin_type": "passive",
+        "pin_name": "Pin_5",
+        "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+        "report_context": {
+          "section": "Connectivity",
+          "impact": "Passive or unclassified pin lonely on its own net.",
+          "standard_ref": ""
+        },
+        "stages": [
+          "schematic"
+        ]
+      },
+      {
+        "detector": "analyze_connectivity",
+        "rule_id": "NT-001",
+        "severity": "info",
+        "confidence": "deterministic",
+        "evidence_source": "topology",
+        "category": "connectivity",
+        "summary": "Single-pin net: J1.Pin_6 only connects to J1.6 (Pin_6) (passive)",
+        "description": "Net '__unnamed_9' has exactly one pin: J1.6 (Pin_6), pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+        "components": [
+          "J1"
+        ],
+        "nets": [
+          "__unnamed_9"
+        ],
+        "pins": [
+          "J1.6"
+        ],
+        "net_display_name": "J1.Pin_6",
+        "pin_type": "passive",
+        "pin_name": "Pin_6",
+        "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+        "report_context": {
+          "section": "Connectivity",
+          "impact": "Passive or unclassified pin lonely on its own net.",
+          "standard_ref": ""
+        },
+        "stages": [
+          "schematic"
+        ]
+      },
+      {
+        "detector": "analyze_connectivity",
+        "rule_id": "NT-001",
+        "severity": "info",
+        "confidence": "deterministic",
+        "evidence_source": "topology",
+        "category": "connectivity",
+        "summary": "Single-pin net: J1.Pin_7 only connects to J1.7 (Pin_7) (passive)",
+        "description": "Net '__unnamed_10' has exactly one pin: J1.7 (Pin_7), pin_type='passive'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+        "components": [
+          "J1"
+        ],
+        "nets": [
+          "__unnamed_10"
+        ],
+        "pins": [
+          "J1.7"
+        ],
+        "net_display_name": "J1.Pin_7",
+        "pin_type": "passive",
+        "pin_name": "Pin_7",
+        "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+        "report_context": {
+          "section": "Connectivity",
+          "impact": "Passive or unclassified pin lonely on its own net.",
+          "standard_ref": ""
+        },
+        "stages": [
+          "schematic"
+        ]
+      },
+      {
+        "detector": "analyze_connectivity",
+        "rule_id": "NT-001",
+        "severity": "warning",
+        "confidence": "deterministic",
+        "evidence_source": "topology",
+        "category": "connectivity",
+        "summary": "Single-pin net: U1.Vadj only connects to U1.7 (Vadj) (input)",
+        "description": "Net '__unnamed_11' has exactly one pin: U1.7 (Vadj), pin_type='input'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+        "components": [
+          "U1"
+        ],
+        "nets": [
+          "__unnamed_11"
+        ],
+        "pins": [
+          "U1.7"
+        ],
+        "net_display_name": "U1.Vadj",
+        "pin_type": "input",
+        "pin_name": "Vadj",
+        "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+        "report_context": {
+          "section": "Connectivity",
+          "impact": "Likely unfinished wiring: a driven or powered pin has no counterpart.",
+          "standard_ref": ""
+        },
+        "stages": [
+          "schematic"
+        ]
+      }
+    ],
+    "multi_driver_nets": [],
+    "power_net_summary": {}
+  },
+  "labels": [],
+  "no_connects": [],
+  "power_symbols": [],
+  "annotation_issues": {},
+  "label_shape_warnings": [],
+  "pwr_flag_warnings": [],
+  "footprint_filter_warnings": [],
+  "sourcing_audit": {
+    "total_bom_components": 7,
+    "mpn_coverage": "4/7",
+    "missing_mpn": [
+      "C3",
+      "J1",
+      "U1"
+    ],
+    "missing_digikey": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "J1",
+      "U1"
+    ],
+    "missing_lcsc": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "J1",
+      "U1"
+    ],
+    "mpn_percent": 57.1
+  },
+  "ground_domains": {
+    "ground_nets": {},
+    "multiple_domains": false
+  },
+  "bus_topology": {
+    "bus_wire_count": 0,
+    "bus_entry_count": 0
+  },
+  "wire_geometry": {
+    "total_wires": 35,
+    "total_length_mm": 504.2,
+    "avg_length_mm": 14.4
+  },
+  "simulation_readiness": {
+    "total_components": 7,
+    "likely_simulatable": 5,
+    "needs_model": 2,
+    "components_without_model": [
+      "J1",
+      "U1"
+    ],
+    "simulatable_percent": 71.4
+  },
+  "property_issues": {},
+  "placement_analysis": {
+    "bounding_box": {
+      "x_min": 26.7,
+      "y_min": 27.9,
+      "x_max": 72.4,
+      "y_max": 80.0,
+      "width_mm": 45.7,
+      "height_mm": 52.1
+    },
+    "clusters": [
+      {
+        "region": "row0_col0",
+        "component_count": 7,
+        "types": {
+          "capacitor": 5,
+          "connector": 1,
+          "ic": 1
+        },
+        "references": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "J1",
+          "U1"
+        ]
+      }
+    ],
+    "grid_size": "1x1"
+  },
+  "hierarchical_labels": {
+    "hierarchical_label_count": 0,
+    "global_label_count": 0
+  },
+  "rail_voltages": {},
+  "power_sequencing_validation": {
+    "power_tree": [
+      {
+        "rail": "__unnamed_0",
+        "source": "U1",
+        "source_type": "regulator",
+        "enable_type": "always_on",
+        "sequence_order": 0
+      }
+    ],
+    "provenance": {
+      "evidence": "pseq_enable_chain",
+      "confidence": "heuristic",
+      "claimed_components": [],
+      "excluded_by": [],
+      "suppressed_candidates": []
+    }
+  },
+  "net_classifications": {
+    "__unnamed_0": {
+      "type": "power_rail",
+      "source": "power_regulators"
+    }
+  },
+  "text_annotations": [
+    {
+      "type": "text",
+      "text": "\u5c0e\u96fb\u6027\u9ad8\u5206\u5b50",
+      "x": 63.5,
+      "y": 56.896,
+      "angle": 90.0
+    },
+    {
+      "type": "text",
+      "text": "\u5c0e\u96fb\u6027\u9ad8\u5206\u5b50",
+      "x": 33.02,
+      "y": 56.642,
+      "angle": 90.0
+    },
+    {
+      "type": "text",
+      "text": "\u4f4eESR\u30a2\u30eb\u30df\u96fb\u89e3",
+      "x": 71.12,
+      "y": 56.896,
+      "angle": 90.0
+    },
+    {
+      "type": "text",
+      "text": "\u4f4eESR\u30a2\u30eb\u30df\u96fb\u89e3",
+      "x": 25.4,
+      "y": 56.642,
+      "angle": 90.0
+    }
+  ],
+  "sleep_current_audit": {
+    "rails": {
+      "__unnamed_0": {
+        "current_paths": [
+          {
+            "ref": "U1",
+            "value": "YDS512F",
+            "type": "regulator_iq",
+            "current_uA": 100,
+            "has_enable_pin": false,
+            "note": "estimated Iq (always-on, no EN pin detected)",
+            "likely_state": "always-on",
+            "realistic_uA": 100
+          }
+        ],
+        "total_uA": 100,
+        "always_on_uA": 100,
+        "conditional_uA": 0,
+        "realistic_uA": 100
+      }
+    },
+    "total_estimated_sleep_uA": 100.0,
+    "conditional_pull_up_uA": 0.0,
+    "realistic_total_uA": 100.0,
+    "observations": [
+      "Always-on current: 100.0 uA (0.10 mA)",
+      "Realistic sleep estimate: 100.0 uA (0.10 mA)"
+    ]
+  },
+  "power_budget": {
+    "rails": {
+      "__unnamed_0": {
+        "ic_count": 0,
+        "ics": [],
+        "estimated_load_mA": 0,
+        "regulator": {
+          "ref": "U1",
+          "value": "YDS512F",
+          "topology": "LDO"
+        }
+      }
+    }
+  },
+  "bom_optimization": {
+    "unique_value_counts": {
+      "resistor": 0,
+      "capacitor": 5
+    },
+    "total_unique_footprints": 5,
+    "single_use_passive_values": 5
+  },
+  "test_coverage": {
+    "test_points": [],
+    "test_point_count": 0,
+    "covered_nets": [],
+    "observations": [
+      "No test points found in design",
+      "No debug connectors (SWD/JTAG/UART) identified"
+    ]
+  },
+  "assembly_complexity": {
+    "total_components": 7,
+    "smd_count": 2,
+    "tht_count": 5,
+    "complexity_score": 19,
+    "difficulty_breakdown": {
+      "hard": 0,
+      "medium": 2,
+      "easy": 5
+    },
+    "package_breakdown": {
+      "THT": 5,
+      "other_SMD": 2
+    },
+    "unique_footprints": 2,
+    "observations": [
+      "Low assembly complexity (score 19/100) \u2014 hand assembly feasible"
+    ]
+  },
+  "missing_info": {
+    "missing_mpn": [
+      "C3",
+      "J1",
+      "U1"
+    ],
+    "missing_datasheet": [
+      "C1",
+      "C2",
+      "C4",
+      "C5"
+    ]
+  },
+  "bom_lock": {
+    "total_bom_components": 7,
+    "components_with_mpn": 4,
+    "missing_mpn": [
+      "C3",
+      "J1",
+      "U1"
+    ],
+    "missing_mpn_count": 3,
+    "generic_values": [],
+    "lock_pct": 57,
+    "status": "fail"
+  },
+  "design_intent": {
+    "product_class": "prototype",
+    "ipc_class": 2,
+    "target_market": "hobby",
+    "expected_lifetime_years": 5,
+    "operating_temp_range": [
+      -10,
+      70
+    ],
+    "preferred_passive_size": "0603",
+    "test_coverage_target": 0.85,
+    "approved_manufacturers": [],
+    "confidence": 0.3,
+    "detection_signals": [],
+    "source": {
+      "ipc_class": "auto",
+      "product_class": "auto",
+      "target_market": "auto",
+      "expected_lifetime_years": "auto",
+      "operating_temp_range": "auto",
+      "preferred_passive_size": "auto",
+      "test_coverage_target": "auto",
+      "approved_manufacturers": "auto"
+    }
+  },
+  "audience_summary": {
+    "designer": {
+      "total_findings": 17,
+      "by_severity": {
+        "error": 2,
+        "warning": 4,
+        "info": 11
+      },
+      "by_category": {
+        "connectors": 1,
+        "regulator_caps": 1,
+        "verification": 1,
+        "protection": 1,
+        "connectivity": 9,
+        "power": 2,
+        "power_management": 1,
+        "sourcing": 1
+      },
+      "top_issues": [
+        {
+          "detector": "audit_power_pin_dc_paths",
+          "rule_id": "PP-001",
+          "severity": "error",
+          "confidence": "heuristic",
+          "evidence_source": "topology",
+          "category": "power",
+          "summary": "IC power pin U1.3 (GND) has no DC path to a power rail (net '__unnamed_1')",
+          "description": "Pin U1.3 (GND) is type=power_in on net '__unnamed_1'. Graph walk (\u22642 hops, rejecting capacitor edges, accepting resistors\u22641\u03a9, inductors, ferrite beads, bridged solder jumpers) did not reach a named power rail. The pin is likely AC-coupled to ground only \u2014 the IC will not power up reliably.",
+          "components": [
+            "U1"
+          ],
+          "nets": [
+            "__unnamed_1"
+          ],
+          "pins": [
+            "U1.3 (GND)"
+          ],
+          "start_net": "__unnamed_1",
+          "visited_nets": [
+            "__unnamed_1"
+          ],
+          "source_path": "none",
+          "recommendation": "Verify the schematic for this pin: the DC route must go through a conducting element (direct wire, 0\u03a9 resistor, inductor, ferrite bead, or bridged solder jumper) \u2014 not a capacitor. If the intent was to tie VCC through an LC filter, add the missing inductor or 0\u03a9 in series.",
+          "report_context": {
+            "section": "Power \u2014 DC Continuity",
+            "impact": "IC supply floats DC; board will not run.",
+            "standard_ref": ""
+          },
+          "provenance": {
+            "evidence": "pp_dc_path_audit",
+            "confidence": "deterministic",
+            "claimed_components": [
+              "U1"
+            ],
+            "excluded_by": [],
+            "suppressed_candidates": []
+          },
+          "detection_id": "",
+          "stages": [
+            "schematic"
+          ]
+        },
+        {
+          "detector": "audit_power_pin_dc_paths",
+          "rule_id": "PP-001",
+          "severity": "error",
+          "confidence": "heuristic",
+          "evidence_source": "topology",
+          "category": "power",
+          "summary": "IC power pin U1.1 (Vin) has no DC path to a power rail (net '__unnamed_2')",
+          "description": "Pin U1.1 (Vin) is type=power_in on net '__unnamed_2'. Graph walk (\u22642 hops, rejecting capacitor edges, accepting resistors\u22641\u03a9, inductors, ferrite beads, bridged solder jumpers) did not reach a named power rail. The pin is likely AC-coupled to ground only \u2014 the IC will not power up reliably.",
+          "components": [
+            "U1"
+          ],
+          "nets": [
+            "__unnamed_2"
+          ],
+          "pins": [
+            "U1.1 (Vin)"
+          ],
+          "start_net": "__unnamed_2",
+          "visited_nets": [
+            "__unnamed_2"
+          ],
+          "source_path": "none",
+          "recommendation": "Verify the schematic for this pin: the DC route must go through a conducting element (direct wire, 0\u03a9 resistor, inductor, ferrite bead, or bridged solder jumper) \u2014 not a capacitor. If the intent was to tie VCC through an LC filter, add the missing inductor or 0\u03a9 in series.",
+          "report_context": {
+            "section": "Power \u2014 DC Continuity",
+            "impact": "IC supply floats DC; board will not run.",
+            "standard_ref": ""
+          },
+          "provenance": {
+            "evidence": "pp_dc_path_audit",
+            "confidence": "deterministic",
+            "claimed_components": [
+              "U1"
+            ],
+            "excluded_by": [],
+            "suppressed_candidates": []
+          },
+          "detection_id": "",
+          "stages": [
+            "schematic"
+          ]
+        },
+        {
+          "ref": "J1",
+          "value": "Conn_01x07_Pin",
+          "total_pins": 7,
+          "ground_pins": 0,
+          "signal_pins": 7,
+          "status": "warning",
+          "detail": "J1: 7-pin connector has no ground pins",
+          "detector": "audit_connector_ground_distribution",
+          "rule_id": "CG-AUD",
+          "category": "connectors",
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "summary": "Connector J1 has no ground pins (7 pins)",
+          "description": "Connector J1 has 7 signal pins but no ground pins.",
+          "components": [
+            "J1"
+          ],
+          "nets": [],
+          "pins": [],
+          "recommendation": "Add ground pin(s) for EMI control.",
+          "report_context": {
+            "section": "Connector Ground",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "provenance": {
+            "evidence": "cg_ground_audit",
+            "confidence": "deterministic",
+            "claimed_components": [
+              "J1"
+            ],
+            "excluded_by": [],
+            "suppressed_candidates": []
+          },
+          "detection_id": "connector_ground_audit:4e03f8f166ee",
+          "stages": [
+            "schematic"
+          ]
+        },
+        {
+          "detector": "audit_datasheet_coverage",
+          "rule_id": "DS-002",
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "bom",
+          "category": "verification",
+          "summary": "No datasheets directory found (4/7 parts have MPNs). Sync datasheets before making pin-level claims.",
+          "components": [
+            "C1",
+            "C2",
+            "C4",
+            "C5"
+          ],
+          "nets": [],
+          "pins": [],
+          "datasheets_dir": null,
+          "datasheet_file_count": 0,
+          "bom_size": 7,
+          "mpn_coverage_percent": 57.1,
+          "recommendation": "Run datasheet sync via the digikey / mouser / lcsc / element14 skill (which one depends on the user's distributor access and API credentials). A ./datasheets/ directory with PDFs and a manifest.json enables pin-level verification in the next analyzer run.",
+          "report_context": {
+            "section": "Datasheet Coverage",
+            "impact": "Review claims must stay at consistency level until datasheets land.",
+            "standard_ref": ""
+          },
+          "stages": [
+            "schematic"
+          ]
+        },
+        {
+          "detector": "analyze_connectivity",
+          "rule_id": "NT-001",
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "category": "connectivity",
+          "summary": "Single-pin net: U1.Vadj only connects to U1.7 (Vadj) (input)",
+          "description": "Net '__unnamed_11' has exactly one pin: U1.7 (Vadj), pin_type='input'. Verify the intended target \u2014 if this pin should connect somewhere, the wire/label is missing.",
+          "components": [
+            "U1"
+          ],
+          "nets": [
+            "__unnamed_11"
+          ],
+          "pins": [
+            "U1.7"
+          ],
+          "net_display_name": "U1.Vadj",
+          "pin_type": "input",
+          "pin_name": "Vadj",
+          "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+          "report_context": {
+            "section": "Connectivity",
+            "impact": "Likely unfinished wiring: a driven or powered pin has no counterpart.",
+            "standard_ref": ""
+          },
+          "stages": [
+            "schematic"
+          ]
+        },
+        {
+          "detector": "audit_sourcing_gate",
+          "rule_id": "SS-002",
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "bom",
+          "category": "sourcing",
+          "summary": "Sourcing gap: 4/7 unique BOM parts have an MPN (57%). Populate before fab.",
+          "description": "Sourcing audit: 4 of 7 unique BOM lines (grouped by value + footprint) carry a manufacturer part number (57.1%). Pre-fab readiness requires 100% coverage; production assembly requires all parts sourceable via one of the supported distributors.",
+          "components": [
+            "C3",
+            "J1",
+            "U1"
+          ],
+          "nets": [],
+          "pins": [],
+          "mpn_coverage_percent": 57.1,
+          "missing_mpn_lines": 3,
+          "missing_mpn_refs": 3,
+          "total_bom_lines": 7,
+          "recommendation": "Populate the MPN field on the listed refs (use the digikey / mouser / lcsc / element14 skill to search by value/footprint when the MPN isn't already known).",
+          "report_context": {
+            "section": "Sourcing",
+            "impact": "Pre-fab gate: board cannot be ordered until MPN coverage reaches 100%.",
+            "standard_ref": ""
+          },
+          "stages": [
+            "pre_fab"
+          ]
+        }
+      ]
+    },
+    "reviewer": {
+      "total_findings": 6,
+      "by_category": {
+        "connectors": 1,
+        "verification": 1,
+        "connectivity": 1,
+        "power": 2,
+        "sourcing": 1
+      },
+      "top_issues": [
+        {
+          "rule_id": "PP-001",
+          "severity": "error",
+          "summary": "IC power pin U1.3 (GND) has no DC path to a power rail (net '__unnamed_1')",
+          "recommendation": "Verify the schematic for this pin: the DC route must go through a conducting element (direct wire, 0\u03a9 resistor, inductor, ferrite bead, or bridged solder jumper) \u2014 not a capacitor. If the intent was to tie VCC through an LC filter, add the missing inductor or 0\u03a9 in series.",
+          "category": "power"
+        },
+        {
+          "rule_id": "PP-001",
+          "severity": "error",
+          "summary": "IC power pin U1.1 (Vin) has no DC path to a power rail (net '__unnamed_2')",
+          "recommendation": "Verify the schematic for this pin: the DC route must go through a conducting element (direct wire, 0\u03a9 resistor, inductor, ferrite bead, or bridged solder jumper) \u2014 not a capacitor. If the intent was to tie VCC through an LC filter, add the missing inductor or 0\u03a9 in series.",
+          "category": "power"
+        },
+        {
+          "rule_id": "CG-AUD",
+          "severity": "warning",
+          "summary": "Connector J1 has no ground pins (7 pins)",
+          "recommendation": "Add ground pin(s) for EMI control.",
+          "category": "connectors"
+        },
+        {
+          "rule_id": "DS-002",
+          "severity": "warning",
+          "summary": "No datasheets directory found (4/7 parts have MPNs). Sync datasheets before making pin-level claims.",
+          "recommendation": "Run datasheet sync via the digikey / mouser / lcsc / element14 skill (which one depends on the user's distributor access and API credentials). A ./datasheets/ directory with PDFs and a manifest.json enables pin-level verification in the next analyzer run.",
+          "category": "verification"
+        },
+        {
+          "rule_id": "NT-001",
+          "severity": "warning",
+          "summary": "Single-pin net: U1.Vadj only connects to U1.7 (Vadj) (input)",
+          "recommendation": "Check the schematic at the referenced pin \u2014 add the missing wire or place a no-connect marker if the pin is intentionally floating.",
+          "category": "connectivity"
+        },
+        {
+          "rule_id": "SS-002",
+          "severity": "warning",
+          "summary": "Sourcing gap: 4/7 unique BOM parts have an MPN (57%). Populate before fab.",
+          "recommendation": "Populate the MPN field on the listed refs (use the digikey / mouser / lcsc / element14 skill to search by value/footprint when the MPN isn't already known).",
+          "category": "sourcing"
+        }
+      ]
+    },
+    "manager": {
+      "risk_level": "moderate",
+      "blocker_count": 2,
+      "warning_count": 4,
+      "stage_readiness": {
+        "schematic": "needs_work",
+        "layout": "pass",
+        "pre_fab": "needs_review",
+        "bring_up": "pass"
+      },
+      "one_liner": "2 errors, 4 warnings across 5 categories. Schematic stage has blockers."
+    }
+  }
+}
