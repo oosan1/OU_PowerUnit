@@ -1,0 +1,8 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+C1,220u,CP_Radial_D10.0mm_P5.00mm,25.265,-65.85,180.0,top
+C2,47u,CP_Radial_D8.0mm_P3.50mm,34.005,-60.77,0.0,top
+C3,2.2u,C_Disc_D6.0mm_W4.4mm_P5.00mm,25.9,-57.595,180.0,top
+C4,100u,CP_Radial_D10.0mm_P5.00mm,54.395,-60.135,0.0,top
+C5,470u,CP_Radial_D10.0mm_P5.00mm,43.725,-60.135,180.0,top
+J1,Conn_01x07_Pin,PinHeader_1x07_P2.54mm_Horizontal,41.735,-67.18,-90.0,top
+U1,YDS512F,YDS512F,41.825,-37.34,0.0,top

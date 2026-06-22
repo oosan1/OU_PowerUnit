@@ -3912,6 +3912,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g113536/"
+			(at 130.81 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "a77ce9e9-5b41-43d1-92c8-da6a8480f965")
 		)
@@ -4664,6 +4675,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g111333/"
+			(at 154.94 68.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a0f9a275-f416-4104-b5ca-6cebc554126d")
 		)
@@ -5198,6 +5220,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g125102/"
+			(at 154.94 59.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "363c2225-3fe4-44e3-9239-bdaf87a80194")
 		)
@@ -5234,7 +5267,7 @@
 				)
 			)
 		)
-		(property "Value" "430"
+		(property "Value" "470"
 			(at 223.52 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5278,6 +5311,17 @@
 			)
 		)
 		(property "Fuse" ""
+			(at 220.98 59.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g125471/"
 			(at 220.98 59.69 90)
 			(hide yes)
 			(show_name no)
@@ -5599,6 +5643,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g111333/"
+			(at 33.02 63.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "549103ed-2720-4c2f-953f-136b517d62b6")
 		)
@@ -5786,6 +5841,17 @@
 			)
 		)
 		(property "Fuse" ""
+			(at 195.58 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g113535/"
 			(at 195.58 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6290,6 +6356,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g125752/"
+			(at 33.02 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "38bc9013-9fb5-4258-af4e-08280c9fa391")
 		)
@@ -6384,6 +6461,17 @@
 			)
 		)
 		(property "Fuse" ""
+			(at 220.98 68.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g111333/"
 			(at 220.98 68.58 90)
 			(hide yes)
 			(show_name no)

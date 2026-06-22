@@ -2277,6 +2277,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g125752/"
+			(at 40.64 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2406f36b-8f82-45a0-a292-0dc98395ccb4")
 		)
@@ -3062,6 +3073,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g111333/"
+			(at 40.64 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "87dac68e-7af2-41d9-b4f1-72daa50b2935")
 		)
@@ -3673,6 +3695,17 @@
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
 			(at 66.04 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g118156/"
+			(at 66.04 30.48 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

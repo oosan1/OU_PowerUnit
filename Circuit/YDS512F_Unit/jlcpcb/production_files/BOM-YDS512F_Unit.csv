@@ -1,0 +1,8 @@
+Comment,Designator,Footprint,LCSC,Quantity
+100u,C4,CP_Radial_D10.0mm_P5.00mm,,1
+470u,C5,CP_Radial_D10.0mm_P5.00mm,,1
+47u,C2,CP_Radial_D8.0mm_P3.50mm,,1
+220u,C1,CP_Radial_D10.0mm_P5.00mm,,1
+Conn_01x07_Pin,J1,PinHeader_1x07_P2.54mm_Horizontal,,1
+2.2u,C3,C_Disc_D6.0mm_W4.4mm_P5.00mm,,1
+YDS512F,U1,YDS512F,,1

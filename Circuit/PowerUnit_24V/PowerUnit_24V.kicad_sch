@@ -7331,6 +7331,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g117950/"
+			(at 101.6 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "14340158-9f08-4f4a-ac40-152d9bdf34d7")
 		)
@@ -7644,6 +7655,17 @@
 			)
 		)
 		(property "Fuse" ""
+			(at 49.53 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g125752/"
 			(at 49.53 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -8062,6 +8084,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g117952/"
+			(at 58.42 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b9c49043-24ae-4e82-b7e0-310ba442417e")
 		)
@@ -8437,6 +8470,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g111333/"
+			(at 49.53 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c1e0857e-aaf7-46f4-a4a8-65c64ff88932")
 		)
@@ -8701,6 +8745,17 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 139.7 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g100941/"
+			(at 139.7 109.22 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9371,6 +9426,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g125752/"
+			(at 83.82 148.59 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ea6019eb-4c25-4138-803b-ced5bf615c54")
 		)
@@ -9634,6 +9700,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 134.62 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g117950/"
 			(at 134.62 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -10631,6 +10708,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g111333/"
+			(at 83.82 157.48 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "576fddc7-9b05-4d8e-8ea8-169761b9fd72")
 		)
@@ -11571,6 +11659,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g117952/"
+			(at 38.1 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4fd64dbe-71bb-4a34-be10-08fae5f91057")
 		)
@@ -11654,6 +11753,17 @@
 			)
 		)
 		(property "Fuse" ""
+			(at 195.58 58.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g100163/"
 			(at 195.58 58.42 90)
 			(hide yes)
 			(show_name no)
@@ -11757,6 +11867,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g125752/"
+			(at 20.32 148.59 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3761a26d-0c5a-4512-ad9d-d76d04563ae2")
 		)
@@ -11839,6 +11960,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g117950/"
+			(at 124.46 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3d86fe4c-2fb8-4926-87b1-c5525a70d5bf")
 		)
@@ -11911,6 +12043,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 113.03 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g117950/"
 			(at 113.03 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -12851,7 +12994,7 @@
 				)
 			)
 		)
-		(property "Value" "NE555P"
+		(property "Value" "NJM555D"
 			(at 138.43 79.6446 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12895,6 +13038,17 @@
 			)
 		)
 		(property "Fuse" ""
+			(at 125.73 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g114531/"
 			(at 125.73 82.55 90)
 			(hide yes)
 			(show_name no)
@@ -13260,6 +13414,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g111333/"
+			(at 20.32 157.48 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5798745f-132d-44bd-a26a-e4ae9dbce808")
 		)
@@ -13429,6 +13594,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g118156/"
+			(at 24.13 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bba2ba85-9de2-4a1f-be63-847de49cddb4")
 		)
@@ -13511,6 +13687,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g117952/"
+			(at 68.58 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e534eef7-e71a-407c-aaef-efe4a7f0af80")
 		)
@@ -13583,6 +13770,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 48.26 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g117952/"
 			(at 48.26 144.78 0)
 			(hide yes)
 			(show_name no)

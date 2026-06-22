@@ -1920,6 +1920,17 @@
 				)
 			)
 		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g101627/"
+			(at 48.26 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "d5549c11-5949-49bb-a618-3faee1c1a231")
 		)
@@ -2005,6 +2016,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 53.34 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_URL" "https://akizukidenshi.com/catalog/g/g116702/"
 			(at 53.34 27.94 0)
 			(hide yes)
 			(show_name no)
